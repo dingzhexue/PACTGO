@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="PACTGO" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-back" translatesAutoresizingMaskIntoConstraints="NO" id="CpS-rg-H0a">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS5-OF-2aX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="hkf-16-eMy"/>
+                    </constraints>
+                    <string key="text">Physical Therapy on the Go,
+Delivered on Demand!</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-front" translatesAutoresizingMaskIntoConstraints="NO" id="zCW-yz-I7m">
+                    <rect key="frame" x="0.0" y="74" width="375" height="519"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyr-ZT-Sns">
+                    <rect key="frame" x="0.0" y="593" width="375" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="nSd-oV-Ggp"/>
+                    </constraints>
+                    <string key="text">Licensed, experienced, PACT certified
+New York physical therapist’s delivered
+to your door for just $149</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDw-Nk-4hf">
+                    <rect key="frame" x="94" y="474" width="187" height="58"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="RIX-Bq-Ll5"/>
+                        <constraint firstAttribute="width" constant="187" id="eth-FP-8rp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Book an Appointment">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sDw-Nk-4hf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Lt-ka-bRE"/>
+                <constraint firstItem="rS5-OF-2aX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3xN-Np-bK4"/>
+                <constraint firstItem="zCW-yz-I7m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="75T-Lg-zUh"/>
+                <constraint firstItem="Oyr-ZT-Sns" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Caj-W9-CxT"/>
+                <constraint firstItem="CpS-rg-H0a" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="DUj-am-dPi"/>
+                <constraint firstItem="CpS-rg-H0a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NDw-Wg-gPB"/>
+                <constraint firstItem="Oyr-ZT-Sns" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="P9Q-vW-96H"/>
+                <constraint firstItem="Oyr-ZT-Sns" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Vnj-vO-xuQ"/>
+                <constraint firstItem="Oyr-ZT-Sns" firstAttribute="top" secondItem="sDw-Nk-4hf" secondAttribute="bottom" constant="61" id="XNc-J6-slM"/>
+                <constraint firstItem="zCW-yz-I7m" firstAttribute="top" secondItem="rS5-OF-2aX" secondAttribute="bottom" id="h1e-So-YBY"/>
+                <constraint firstItem="rS5-OF-2aX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qYc-qm-1KL"/>
+                <constraint firstItem="CpS-rg-H0a" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="tu4-9h-ja1"/>
+                <constraint firstItem="CpS-rg-H0a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uPg-xJ-eDM"/>
+                <constraint firstItem="Oyr-ZT-Sns" firstAttribute="top" secondItem="zCW-yz-I7m" secondAttribute="bottom" id="vE9-8d-TM0"/>
+                <constraint firstItem="zCW-yz-I7m" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="yhZ-OV-NWh"/>
+                <constraint firstItem="rS5-OF-2aX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zjO-vg-sji"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="main-back" width="375" height="667"/>
+        <image name="main-front" width="375" height="434"/>
+    </resources>
+</document>

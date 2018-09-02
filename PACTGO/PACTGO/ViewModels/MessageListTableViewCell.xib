@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="MessageListViewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="647" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="647" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qd1-YF-jjk">
+                        <rect key="frame" x="83" y="26" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="4db-LR-0Bf"/>
+                            <constraint firstAttribute="height" constant="34" id="zIK-1V-AaA"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="staricon-logo2"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr.Clinton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxT-1J-NCy">
+                        <rect key="frame" x="147" y="31.5" width="83" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointment Confirmation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNT-tn-Obf">
+                        <rect key="frame" x="290" y="31.5" width="225" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aug. 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYx-Ak-XXo">
+                        <rect key="frame" x="550.5" y="31.5" width="66.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8j-1X-NK1">
+                        <rect key="frame" x="40" y="34" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="3Rr-U4-rrE"/>
+                            <constraint firstAttribute="height" constant="18" id="Aip-Jh-Z20"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="selection-logo"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RNT-tn-Obf" firstAttribute="leading" secondItem="uxT-1J-NCy" secondAttribute="trailing" constant="60" id="6dl-se-uLb"/>
+                    <constraint firstItem="uxT-1J-NCy" firstAttribute="leading" secondItem="Qd1-YF-jjk" secondAttribute="trailing" constant="30" id="DYG-7V-eL3"/>
+                    <constraint firstItem="O8j-1X-NK1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="GUq-IQ-UTp"/>
+                    <constraint firstItem="O8j-1X-NK1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="23" id="NAJ-4h-9qK"/>
+                    <constraint firstItem="mYx-Ak-XXo" firstAttribute="centerY" secondItem="RNT-tn-Obf" secondAttribute="centerY" id="OdD-vC-7vD"/>
+                    <constraint firstItem="Qd1-YF-jjk" firstAttribute="centerY" secondItem="O8j-1X-NK1" secondAttribute="centerY" id="Py9-2Y-Mbf"/>
+                    <constraint firstItem="uxT-1J-NCy" firstAttribute="centerY" secondItem="Qd1-YF-jjk" secondAttribute="centerY" id="cIP-mj-Wxh"/>
+                    <constraint firstItem="Qd1-YF-jjk" firstAttribute="leading" secondItem="O8j-1X-NK1" secondAttribute="trailing" constant="25" id="eDX-8I-KNV"/>
+                    <constraint firstAttribute="trailing" secondItem="mYx-Ak-XXo" secondAttribute="trailing" constant="30" id="g4B-Gq-Sl2"/>
+                    <constraint firstItem="RNT-tn-Obf" firstAttribute="centerY" secondItem="uxT-1J-NCy" secondAttribute="centerY" id="vOz-fg-gie"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="MessageAppointment" destination="RNT-tn-Obf" id="Y1k-zV-viJ"/>
+                <outlet property="MessageCheckBox" destination="O8j-1X-NK1" id="Ygz-BL-Juj"/>
+                <outlet property="MessageDate" destination="mYx-Ak-XXo" id="HZH-5R-KxB"/>
+                <outlet property="MessageFavourite" destination="Qd1-YF-jjk" id="NDi-o4-fDA"/>
+                <outlet property="MessageListCell" destination="H2p-sc-9uM" id="VLM-KF-q0J"/>
+                <outlet property="MessageName" destination="uxT-1J-NCy" id="d4x-0k-XZ8"/>
+            </connections>
+            <point key="canvasLocation" x="-222.5" y="-281.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selection-logo" width="11" height="12"/>
+        <image name="staricon-logo2" width="12" height="11"/>
+    </resources>
+</document>

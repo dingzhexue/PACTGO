@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PatientForm1ViewController" customModule="PACTGO" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNp-MK-YQl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6l-Vn-YSy">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="605"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vA-wr-PhX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="Gh2-sX-6Fq"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fp-NJ-tPA">
+                                    <rect key="frame" x="0.0" y="78" width="94" height="105"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="105" id="ghC-Vd-zJu"/>
+                                    </constraints>
+                                    <state key="normal" image="pain-neck"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXh-bF-41o">
+                                    <rect key="frame" x="94" y="78" width="93.5" height="105"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="105" id="crA-PW-6p6"/>
+                                    </constraints>
+                                    <state key="normal" image="pain-arm"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwi-kN-TIb">
+                                    <rect key="frame" x="187.5" y="78" width="94" height="105"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="105" id="b6Z-QK-WRA"/>
+                                    </constraints>
+                                    <state key="normal" image="pain-abdomen"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mog-BC-J0E">
+                                    <rect key="frame" x="281.5" y="78" width="93.5" height="105"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="105" id="7Bt-qv-PPo"/>
+                                    </constraints>
+                                    <state key="normal" image="pain-shoulder"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qh2-I0-RxX">
+                                    <rect key="frame" x="0.0" y="203" width="94" height="105"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="105" id="jaP-j3-iGi"/>
+                                    </constraints>
+                                    <state key="normal" image="pain-arm1"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3c-cb-qDi">
+                                    <rect key="frame" x="94" y="203" width="93.5" height="105"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="105" id="84a-yj-Eqd"/>
+                                    </constraints>
+                                    <state key="normal" image="pain-arm2"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHH-FX-qU8">
+                                    <rect key="frame" x="187.5" y="203" width="94" height="105"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="105" id="Pad-nb-pxo"/>
+                                    </constraints>
+                                    <state key="normal" image="pain-knee"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahI-ka-kQh">
+                                    <rect key="frame" x="281.5" y="203" width="93.5" height="105"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="105" id="qEU-gb-poK"/>
+                                    </constraints>
+                                    <state key="normal" image="pain-knee1"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to describe your pain in more detail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYZ-7h-hRF">
+                                    <rect key="frame" x="26" y="336" width="322" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="322" id="2VJ-Uf-ZdP"/>
+                                        <constraint firstAttribute="height" constant="21" id="3nD-2b-Yj2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6jv-UP-gEL">
+                                    <rect key="frame" x="27" y="371" width="321" height="136"/>
+                                    <color key="backgroundColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="136" id="HGT-Yh-ziX"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEh-W1-24z">
+                                    <rect key="frame" x="116" y="537" width="142" height="38"/>
+                                    <color key="backgroundColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="WXS-YL-lmG"/>
+                                        <constraint firstAttribute="width" constant="142" id="obE-Pu-qQR"/>
+                                    </constraints>
+                                    <state key="normal" title="CONTINUE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="mog-BC-J0E" firstAttribute="top" secondItem="3vA-wr-PhX" secondAttribute="bottom" constant="8" id="1S7-3b-atg"/>
+                                <constraint firstItem="Rwi-kN-TIb" firstAttribute="leading" secondItem="VXh-bF-41o" secondAttribute="trailing" id="2JY-0c-vga"/>
+                                <constraint firstAttribute="trailing" secondItem="mog-BC-J0E" secondAttribute="trailing" id="2ZB-v3-rLh"/>
+                                <constraint firstItem="Rwi-kN-TIb" firstAttribute="top" secondItem="3vA-wr-PhX" secondAttribute="bottom" constant="8" id="2az-uu-8Tx"/>
+                                <constraint firstItem="xHH-FX-qU8" firstAttribute="top" secondItem="Rwi-kN-TIb" secondAttribute="bottom" constant="20" id="4DJ-Nc-sfp"/>
+                                <constraint firstItem="Rwi-kN-TIb" firstAttribute="width" secondItem="0Fp-NJ-tPA" secondAttribute="width" id="5US-To-ScG"/>
+                                <constraint firstItem="xHH-FX-qU8" firstAttribute="width" secondItem="Qh2-I0-RxX" secondAttribute="width" id="635-Qq-tcx"/>
+                                <constraint firstItem="xHH-FX-qU8" firstAttribute="leading" secondItem="d3c-cb-qDi" secondAttribute="trailing" id="6eh-bG-Uwg"/>
+                                <constraint firstItem="d3c-cb-qDi" firstAttribute="leading" secondItem="Qh2-I0-RxX" secondAttribute="trailing" id="8py-CU-1Iy"/>
+                                <constraint firstItem="VXh-bF-41o" firstAttribute="leading" secondItem="0Fp-NJ-tPA" secondAttribute="trailing" id="BRu-vi-IMc"/>
+                                <constraint firstItem="mog-BC-J0E" firstAttribute="width" secondItem="0Fp-NJ-tPA" secondAttribute="width" id="CS1-J0-rux"/>
+                                <constraint firstItem="6jv-UP-gEL" firstAttribute="top" secondItem="KYZ-7h-hRF" secondAttribute="bottom" constant="14" id="CWx-KU-D8J"/>
+                                <constraint firstAttribute="trailing" secondItem="3vA-wr-PhX" secondAttribute="trailing" id="Dtk-tG-kGP"/>
+                                <constraint firstItem="WEh-W1-24z" firstAttribute="top" secondItem="6jv-UP-gEL" secondAttribute="bottom" constant="30" id="Fiy-aZ-LUE"/>
+                                <constraint firstAttribute="bottom" secondItem="WEh-W1-24z" secondAttribute="bottom" constant="30" id="HxT-AJ-QG3"/>
+                                <constraint firstItem="KYZ-7h-hRF" firstAttribute="top" secondItem="Qh2-I0-RxX" secondAttribute="bottom" constant="28" id="Kru-gV-X6f"/>
+                                <constraint firstItem="VXh-bF-41o" firstAttribute="top" secondItem="3vA-wr-PhX" secondAttribute="bottom" constant="8" id="M8T-rb-jml"/>
+                                <constraint firstItem="ahI-ka-kQh" firstAttribute="leading" secondItem="xHH-FX-qU8" secondAttribute="trailing" id="Q3z-tg-7yn"/>
+                                <constraint firstItem="ahI-ka-kQh" firstAttribute="width" secondItem="Qh2-I0-RxX" secondAttribute="width" id="TWH-ev-r17"/>
+                                <constraint firstItem="0Fp-NJ-tPA" firstAttribute="leading" secondItem="G6l-Vn-YSy" secondAttribute="leading" id="WMg-RA-9as"/>
+                                <constraint firstAttribute="trailing" secondItem="ahI-ka-kQh" secondAttribute="trailing" id="WtR-ew-epW"/>
+                                <constraint firstItem="d3c-cb-qDi" firstAttribute="leading" secondItem="Qh2-I0-RxX" secondAttribute="trailing" id="aGA-lQ-Fv6"/>
+                                <constraint firstItem="mog-BC-J0E" firstAttribute="leading" secondItem="Rwi-kN-TIb" secondAttribute="trailing" id="c64-7b-N46"/>
+                                <constraint firstItem="0Fp-NJ-tPA" firstAttribute="top" secondItem="3vA-wr-PhX" secondAttribute="bottom" constant="8" id="dn3-lT-1Ba"/>
+                                <constraint firstItem="3vA-wr-PhX" firstAttribute="top" secondItem="G6l-Vn-YSy" secondAttribute="top" id="eDj-4V-gPw"/>
+                                <constraint firstItem="xHH-FX-qU8" firstAttribute="leading" secondItem="d3c-cb-qDi" secondAttribute="trailing" id="fSr-lp-6mc"/>
+                                <constraint firstItem="6jv-UP-gEL" firstAttribute="leading" secondItem="G6l-Vn-YSy" secondAttribute="leading" constant="27" id="glt-QJ-fZW"/>
+                                <constraint firstItem="Qh2-I0-RxX" firstAttribute="leading" secondItem="G6l-Vn-YSy" secondAttribute="leading" id="hzM-4Q-WF4"/>
+                                <constraint firstItem="KYZ-7h-hRF" firstAttribute="centerX" secondItem="G6l-Vn-YSy" secondAttribute="centerX" id="iXU-Ui-TX8"/>
+                                <constraint firstItem="d3c-cb-qDi" firstAttribute="top" secondItem="VXh-bF-41o" secondAttribute="bottom" constant="20" id="nPB-oq-gLa"/>
+                                <constraint firstAttribute="trailing" secondItem="6jv-UP-gEL" secondAttribute="trailing" constant="27" id="oru-zg-6jt"/>
+                                <constraint firstItem="3vA-wr-PhX" firstAttribute="leading" secondItem="G6l-Vn-YSy" secondAttribute="leading" id="pkD-Tq-kQr"/>
+                                <constraint firstItem="ahI-ka-kQh" firstAttribute="leading" secondItem="xHH-FX-qU8" secondAttribute="trailing" id="qc1-Jb-57s"/>
+                                <constraint firstItem="ahI-ka-kQh" firstAttribute="top" secondItem="mog-BC-J0E" secondAttribute="bottom" constant="20" id="sKU-pD-ocI"/>
+                                <constraint firstItem="d3c-cb-qDi" firstAttribute="width" secondItem="Qh2-I0-RxX" secondAttribute="width" id="v0V-gw-g14"/>
+                                <constraint firstItem="Qh2-I0-RxX" firstAttribute="top" secondItem="0Fp-NJ-tPA" secondAttribute="bottom" constant="20" id="xg2-Ax-3c5"/>
+                                <constraint firstItem="VXh-bF-41o" firstAttribute="width" secondItem="0Fp-NJ-tPA" secondAttribute="width" id="yaZ-eZ-mKb"/>
+                                <constraint firstItem="WEh-W1-24z" firstAttribute="centerX" secondItem="G6l-Vn-YSy" secondAttribute="centerX" id="ydM-u1-dJ9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="G6l-Vn-YSy" firstAttribute="width" secondItem="CNp-MK-YQl" secondAttribute="width" id="0N3-DN-jpW"/>
+                        <constraint firstItem="G6l-Vn-YSy" firstAttribute="top" secondItem="CNp-MK-YQl" secondAttribute="top" id="C9B-V9-xhQ"/>
+                        <constraint firstItem="G6l-Vn-YSy" firstAttribute="leading" secondItem="CNp-MK-YQl" secondAttribute="leading" id="VAC-vt-5e4"/>
+                        <constraint firstAttribute="bottom" secondItem="G6l-Vn-YSy" secondAttribute="bottom" id="dhS-tM-HcK"/>
+                        <constraint firstAttribute="trailing" secondItem="G6l-Vn-YSy" secondAttribute="trailing" id="iQ0-R3-m18"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CNp-MK-YQl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6wi-MC-QZ8"/>
+                <constraint firstItem="CNp-MK-YQl" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="UGZ-De-C3z"/>
+                <constraint firstItem="CNp-MK-YQl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z36-9n-XZj"/>
+                <constraint firstItem="CNp-MK-YQl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bKJ-FW-Q7j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pain-abdomen" width="56" height="104"/>
+        <image name="pain-arm" width="52" height="104"/>
+        <image name="pain-arm1" width="47" height="104"/>
+        <image name="pain-arm2" width="40" height="104"/>
+        <image name="pain-knee" width="51" height="104"/>
+        <image name="pain-knee1" width="41" height="104"/>
+        <image name="pain-neck" width="51" height="104"/>
+        <image name="pain-shoulder" width="50" height="104"/>
+    </resources>
+</document>
