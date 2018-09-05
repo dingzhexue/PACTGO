@@ -1,0 +1,24 @@
+PODS:
+  - AZTabBar (1.3.2):
+    - EasyNotificationBadge
+  - EasyNotificationBadge (1.1.3)
+  - SideMenuSwift (0.4.0)
+
+DEPENDENCIES:
+  - AZTabBar
+  - SideMenuSwift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AZTabBar
+    - EasyNotificationBadge
+    - SideMenuSwift
+
+SPEC CHECKSUMS:
+  AZTabBar: ae3f25c0d77593a0fee4cfb3ad2912f68e560f12
+  EasyNotificationBadge: d7054b7980f36469bfca1624ff40426703a78ac5
+  SideMenuSwift: 620bebef86c04680ada5f15f9dee928fd740adf4
+
+PODFILE CHECKSUM: 997ffdaf34c0a8b6d23de4d8b497eb71c2b01def
+
+COCOAPODS: 1.5.0

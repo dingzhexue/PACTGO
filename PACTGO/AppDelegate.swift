@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let currentStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let contentVC = currentStoryboard.instantiateViewController(withIdentifier: "MainRootViewController")
+        let menuVC = currentStoryboard.instantiateViewController(withIdentifier: "SideMenuViewController")
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = SideMenuController(contentViewController: contentVC,
+                                                        menuViewController: menuVC)
+        SideMenuController.preferences.basic.menuWidth = 240
+        SideMenuController.preferences.basic.statusBarBehavior = .fade
+        SideMenuController.preferences.basic.direction = .right
+        SideMenuController.preferences.basic.enablePanGesture = true
+        SideMenuController.preferences.basic.supportedOrientations = .portrait
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

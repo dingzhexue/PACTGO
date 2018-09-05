@@ -14,6 +14,12 @@ class HurtViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        initUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.navigationBar.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +27,34 @@ class HurtViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func initUI(){
+        title = "Select What Hurts?"
+        let rightBtn = UIBarButtonItem(title: "Continue",
+                                       style: .plain,
+                                       target: self,
+                                       action: #selector(btnContinueTapped))
+        let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
+                                      style: .plain,
+                                      target: self,
+                                      action: #selector(btnBackTapped))
+        navigationItem.titleView?.tintColor = UIColor.white
+        navigationItem.leftBarButtonItem = leftBtn
+        navigationItem.rightBarButtonItem = rightBtn
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.init(red: 51 / 255,
+                                                                    green: 192 / 255,
+                                                                    blue: 174 / 255,
+                                                                    alpha: 1.0)
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+    }
+    
+    // MARK: - Navigation button actions
+    @objc func btnContinueTapped(){
+        
+    }
+    
+    @objc func btnBackTapped(){
+        navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
