@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PACTGO/ViewControllers/HelpViewController.swift"
-            timestampString = "557746008.557891"
+            timestampString = "557908285.956048"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "btnFAQ2Tapped(_:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -17,6 +17,7 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         registerNotifications()
+        navigationController?.navigationBar.isHidden = false
         initUI()
     }
     
@@ -115,6 +116,7 @@ class MainViewController: UIViewController {
                                                               blue: 174 / 255,
                                                               alpha: 1.0)
         tabController.animateTabChange = true
+        tabController.tabBarHeight = 70
         
         navigationController?.pushViewController(tabController, animated: true)
     }

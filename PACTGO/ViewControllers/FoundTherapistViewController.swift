@@ -14,11 +14,46 @@ class FoundTherapistViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        initUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initUI(){
+        title = "We Found you\n a Therapist!"
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
+        titleLabel.numberOfLines = 2
+        titleLabel.text = title
+        titleLabel.textColor = .white
+        navigationItem.titleView = titleLabel
+        let rightBtn = UIBarButtonItem(title: "SUPPORT",
+                                       style: .plain,
+                                       target: self,
+                                       action: #selector(btnSupportTapped))
+        let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
+                                      style: .plain,
+                                      target: self,
+                                      action: #selector(btnBackTapped))
+        navigationItem.titleView?.tintColor = UIColor.white
+        navigationItem.leftBarButtonItem = leftBtn
+        navigationItem.rightBarButtonItem = rightBtn
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.init(red: 51 / 255,
+                                                                    green: 192 / 255,
+                                                                    blue: 174 / 255,
+                                                                    alpha: 1.0)
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+    }
+    
+    // MARK: - Navigation button actions
+    @objc func btnSupportTapped(){
+        
+    }
+    
+    @objc func btnBackTapped(){
+        navigationController?.popViewController(animated: true)
     }
     
 

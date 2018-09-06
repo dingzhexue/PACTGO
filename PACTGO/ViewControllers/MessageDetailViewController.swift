@@ -14,11 +14,37 @@ class MessageDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        initUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initUI(){
+        title = "Messages"
+        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
+                                       style: .plain,
+                                       target: self,
+                                       action: #selector(btnMenuTapped))
+        let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
+                                      style: .plain,
+                                      target: self,
+                                      action: #selector(btnBackTapped))
+        navigationItem.titleView?.tintColor = UIColor.white
+        navigationItem.rightBarButtonItem = rightBtn
+        navigationItem.leftBarButtonItem = leftBtn
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+    }
+    
+    // MARK: - Navigation button actions
+    @objc func btnMenuTapped(){
+        sideMenuController?.revealMenu()
+    }
+    
+    @objc func btnBackTapped(){
+        navigationController?.popViewController(animated: true)
     }
     
 

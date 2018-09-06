@@ -18,6 +18,7 @@ class HelpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         initUI()
+        navigationController?.navigationBar.isHidden = false
     }
     
     override func viewDidAppear(_ animated: Bool) {

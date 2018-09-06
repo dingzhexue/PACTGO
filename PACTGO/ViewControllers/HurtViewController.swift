@@ -49,7 +49,7 @@ class HurtViewController: UIViewController {
     
     // MARK: - Navigation button actions
     @objc func btnContinueTapped(){
-        
+        performSegue(withIdentifier: "GoToFindYourTherapistPage", sender: self)
     }
     
     @objc func btnBackTapped(){

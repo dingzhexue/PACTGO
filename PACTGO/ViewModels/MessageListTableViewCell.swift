@@ -1,5 +1,5 @@
 //
-//  MessageListItemTableViewCell.swift
+//  MessageListTableViewCell.swift
 //  PACTGO
 //
 //  Created by admin on 8/30/18.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class MessageListItemTableViewCell: UITableViewCell {
+class MessageListTableViewCell: UITableViewCell {
     
-   
-    @IBOutlet weak var MessageCheckBox: UIButton!
-    @IBOutlet weak var MessageFavourite: UIButton!
-    @IBOutlet weak var MessageName: UILabel!
-    @IBOutlet weak var MessageAppointment: UILabel!
-    @IBOutlet weak var MessageDate: UILabel!
+    @IBOutlet weak var messageCheckBox: UIButton!
+    @IBOutlet weak var messageFavorite: UIButton!
+    @IBOutlet weak var messageName: UILabel!
+    @IBOutlet weak var messageAppointment: UILabel!
+    @IBOutlet weak var messageDate: UILabel!
+    
     
     
     override func awakeFromNib() {
