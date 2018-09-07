@@ -13,12 +13,23 @@ class HelpViewController: UIViewController {
     var selectedFAQ = ""
     var selectedContent = ""
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         initUI()
         navigationController?.navigationBar.isHidden = false
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShow),
+                                               name: NSNotification.Name.UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide),
+                                               name: NSNotification.Name.UIKeyboardWillHide,
+                                               object: nil)
+        hideKeyboardwhenTappedAround()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,6 +56,19 @@ class HelpViewController: UIViewController {
     // MARK: - Navigation button actions
     @objc func btnBackTapped(){
         navigationController?.popViewController(animated: true)
+    }
+    
+    // MARK: - Keyboard Notifications
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            scrollView.setContentOffset(CGPoint(x:0, y:keyboardSize.height), animated: true)
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if ((notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue) != nil {
+            scrollView.setContentOffset(CGPoint(x:0, y:-60), animated: true)
+        }
     }
     
     // MARK: - UIButton actions

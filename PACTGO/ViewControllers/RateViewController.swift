@@ -1,14 +1,14 @@
 //
-//  SignInViewController.swift
+//  RateViewController.swift
 //  PACTGO
 //
-//  Created by admin on 8/29/18.
+//  Created by admin on 9/7/18.
 //  Copyright © 2018 PACTGO. All rights reserved.
 //
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class RateViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -16,7 +16,6 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationController?.navigationBar.isHidden = false
         initUI()
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillShow),
@@ -28,11 +27,6 @@ class SignInViewController: UIViewController {
                                                object: nil)
         hideKeyboardwhenTappedAround()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        navigationController?.navigationBar.isHidden = false
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -40,33 +34,19 @@ class SignInViewController: UIViewController {
     }
     
     func initUI(){
-        title = "Sign in"
+        title = ""
         let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
                                       style: .plain,
                                       target: self,
                                       action: #selector(btnBackTapped))
-        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
-                                       style: .plain,
-                                       target: self,
-                                       action: #selector(btnMenuTapped))
-        navigationItem.rightBarButtonItem = rightBtn
+        navigationItem.titleView?.tintColor = UIColor.white
         navigationItem.leftBarButtonItem = leftBtn
-
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
     
     // MARK: - Navigation button actions
-    @objc func btnMenuTapped(){
-        sideMenuController?.revealMenu()
-    }
-    
     @objc func btnBackTapped(){
         navigationController?.popViewController(animated: true)
-    }
-    
-    // MARK: - UIButton actions
-    @IBAction func btnSignUpHereTapped(_ sender: Any) {
-        
     }
     
     // MARK: - Keyboard Notifications
@@ -82,7 +62,6 @@ class SignInViewController: UIViewController {
         }
     }
     
-
 
     /*
     // MARK: - Navigation

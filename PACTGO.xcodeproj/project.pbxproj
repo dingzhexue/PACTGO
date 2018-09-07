@@ -44,6 +44,7 @@
 		84752CAF20BD8F9A00EE23FD /* FoundTherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84752CAD20BD8F9A00EE23FD /* FoundTherapistViewController.swift */; };
 		84752CB220BD95AD00EE23FD /* PGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84752CB120BD95AD00EE23FD /* PGNavigationController.swift */; };
 		848A25E3213A7F8B003CBF8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848A25E2213A7F8B003CBF8E /* Main.storyboard */; };
+		848C83232142181D00C75860 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C83222142181D00C75860 /* RateViewController.swift */; };
 		84BFFDAE20B89A3700D70E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFFDAD20B89A3700D70E9F /* AppDelegate.swift */; };
 		84BFFDB020B89A3700D70E9F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFFDAF20B89A3700D70E9F /* SideMenuViewController.swift */; };
 		84BFFDB520B89A3A00D70E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BFFDB420B89A3A00D70E9F /* Assets.xcassets */; };
@@ -93,6 +94,7 @@
 		84752CAD20BD8F9A00EE23FD /* FoundTherapistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundTherapistViewController.swift; sourceTree = "<group>"; };
 		84752CB120BD95AD00EE23FD /* PGNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGNavigationController.swift; sourceTree = "<group>"; };
 		848A25E2213A7F8B003CBF8E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		848C83222142181D00C75860 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		84BFFDAA20B89A3600D70E9F /* PACTGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PACTGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BFFDAD20B89A3700D70E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BFFDAF20B89A3700D70E9F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				843DBD7021383AAC00390065 /* PatientProfileViewController.swift */,
 				843DBD742138A61300390065 /* PatientScheduleViewController.swift */,
 				843DBD7C2138C8B300390065 /* PatientSchedule2ViewController.swift */,
+				848C83222142181D00C75860 /* RateViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				843DBD7E2138C8B300390065 /* PatientSchedule2ViewController.swift in Sources */,
 				843AA1FA2136E8990073760A /* PickPTViewController.swift in Sources */,
 				843AA1F62136D41B0073760A /* SignInViewController.swift in Sources */,
+				848C83232142181D00C75860 /* RateViewController.swift in Sources */,
 				843DBD6E2138262800390065 /* PADetailViewController.swift in Sources */,
 				84752C9D20BC681600EE23FD /* MainViewController.swift in Sources */,
 				8467445B213640EE002E6694 /* BillingSheet2ViewController.swift in Sources */,
@@ -525,7 +529,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JZ562WR45;
 				INFOPLIST_FILE = PACTGO/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pactgo.app.PACTGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -541,7 +548,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JZ562WR45;
 				INFOPLIST_FILE = PACTGO/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pactgo.app.PACTGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
