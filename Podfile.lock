@@ -1,24 +1,32 @@
 PODS:
   - AZTabBar (1.3.2):
     - EasyNotificationBadge
+  - Cosmos (15.0.0)
   - EasyNotificationBadge (1.1.3)
+  - IQKeyboardManagerSwift (6.0.0)
   - SideMenuSwift (0.4.0)
 
 DEPENDENCIES:
   - AZTabBar
+  - Cosmos
+  - IQKeyboardManagerSwift
   - SideMenuSwift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AZTabBar
+    - Cosmos
     - EasyNotificationBadge
+    - IQKeyboardManagerSwift
     - SideMenuSwift
 
 SPEC CHECKSUMS:
   AZTabBar: ae3f25c0d77593a0fee4cfb3ad2912f68e560f12
+  Cosmos: a6dbd3d0baa0cc8f51f8598f7508d5a09d0a9ade
   EasyNotificationBadge: d7054b7980f36469bfca1624ff40426703a78ac5
+  IQKeyboardManagerSwift: 624f128983eec795deacd50c1cd2f72664d13f08
   SideMenuSwift: 620bebef86c04680ada5f15f9dee928fd740adf4
 
-PODFILE CHECKSUM: 997ffdaf34c0a8b6d23de4d8b497eb71c2b01def
+PODFILE CHECKSUM: ebcbe44a6a80400236fbdec63a610a4db1cbc496
 
 COCOAPODS: 1.5.0

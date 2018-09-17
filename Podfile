@@ -19,4 +19,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'PACTGO' do
 	pod 'SideMenuSwift'
     pod 'AZTabBar'
+    pod 'IQKeyboardManagerSwift'
+    pod 'Cosmos'
 end

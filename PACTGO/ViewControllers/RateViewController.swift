@@ -17,15 +17,6 @@ class RateViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         initUI()
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardWillShow),
-                                               name: NSNotification.Name.UIKeyboardWillShow,
-                                               object: nil)
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardWillHide),
-                                               name: NSNotification.Name.UIKeyboardWillHide,
-                                               object: nil)
-        hideKeyboardwhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,21 +39,6 @@ class RateViewController: UIViewController {
     @objc func btnBackTapped(){
         navigationController?.popViewController(animated: true)
     }
-    
-    // MARK: - Keyboard Notifications
-    @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            scrollView.setContentOffset(CGPoint(x:0, y:keyboardSize.height), animated: true)
-        }
-    }
-    
-    @objc func keyboardWillHide(notification: NSNotification) {
-        if ((notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue) != nil {
-            scrollView.setContentOffset(CGPoint(x:0, y:-60), animated: true)
-        }
-    }
-    
-
     /*
     // MARK: - Navigation
 

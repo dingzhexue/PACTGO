@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenuSwift
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        IQKeyboardManager.shared.enable = true
         let currentStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let contentVC = currentStoryboard.instantiateViewController(withIdentifier: "MainRootViewController")
         let menuVC = currentStoryboard.instantiateViewController(withIdentifier: "SideMenuViewController")
@@ -55,20 +57,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
-}
-
-extension UIViewController {
-    func hideKeyboardwhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard(){
-        view.endEditing(true)
     }
 }
 
