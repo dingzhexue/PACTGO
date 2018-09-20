@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		843924052139985100F27D2C /* PatientHistoryList2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843924032139985100F27D2C /* PatientHistoryList2TableViewCell.swift */; };
-		843924062139985100F27D2C /* PatientHistoryList2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843924042139985100F27D2C /* PatientHistoryList2TableViewCell.xib */; };
 		843AA1F62136D41B0073760A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA1F42136D41B0073760A /* SignInViewController.swift */; };
 		843AA1FA2136E8990073760A /* PickPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA1F82136E8990073760A /* PickPTViewController.swift */; };
 		843AA1FE2136ED140073760A /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA1FC2136ED140073760A /* PatientViewController.swift */; };
@@ -19,19 +18,13 @@
 		843DBD562137D2B000390065 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD542137D2B000390065 /* MessageDetailViewController.swift */; };
 		843DBD5A2137DE2700390065 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD582137DE2700390065 /* MessageListViewController.swift */; };
 		843DBD5E2137E2F200390065 /* PatientHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD5C2137E2F200390065 /* PatientHistoryViewController.swift */; };
-		843DBD622137E46800390065 /* MessageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD602137E46800390065 /* MessageListTableViewCell.swift */; };
-		843DBD632137E46800390065 /* MessageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843DBD612137E46800390065 /* MessageListTableViewCell.xib */; };
 		843DBD66213818F600390065 /* PatientHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD64213818F600390065 /* PatientHistoryTableViewCell.swift */; };
-		843DBD67213818F600390065 /* PatientHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843DBD65213818F600390065 /* PatientHistoryTableViewCell.xib */; };
 		843DBD6A21381CB800390065 /* PatientHistoryList2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD6821381CB800390065 /* PatientHistoryList2ViewController.swift */; };
 		843DBD6E2138262800390065 /* PADetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD6C2138262800390065 /* PADetailViewController.swift */; };
 		843DBD7221383AAC00390065 /* PatientProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD7021383AAC00390065 /* PatientProfileViewController.swift */; };
 		843DBD762138A61300390065 /* PatientScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD742138A61300390065 /* PatientScheduleViewController.swift */; };
-		843DBD7A2138BB3600390065 /* PatientScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD782138BB3600390065 /* PatientScheduleCollectionViewCell.swift */; };
-		843DBD7B2138BB3600390065 /* PatientScheduleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843DBD792138BB3600390065 /* PatientScheduleCollectionViewCell.xib */; };
 		843DBD7E2138C8B300390065 /* PatientSchedule2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD7C2138C8B300390065 /* PatientSchedule2ViewController.swift */; };
 		843DBD822138CD0200390065 /* PatientScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD802138CD0200390065 /* PatientScheduleTableViewCell.swift */; };
-		843DBD832138CD0200390065 /* PatientScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843DBD812138CD0200390065 /* PatientScheduleTableViewCell.xib */; };
 		844C88D22136AAFB0061A076 /* CreateAccount2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C88D02136AAFB0061A076 /* CreateAccount2ViewController.swift */; };
 		8467445721362F1A002E6694 /* BillingSheet1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467445521362F1A002E6694 /* BillingSheet1ViewController.swift */; };
 		8467445B213640EE002E6694 /* BillingSheet2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84674459213640EE002E6694 /* BillingSheet2ViewController.swift */; };
@@ -53,12 +46,23 @@
 		84D3927820BC303C00306D40 /* PatientForm2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3927620BC303C00306D40 /* PatientForm2ViewController.swift */; };
 		84D3927C20BC3DA100306D40 /* PatientForm1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3927A20BC3DA100306D40 /* PatientForm1ViewController.swift */; };
 		DF6F0859D6B7F8DA18B7BF41 /* Pods_PACTGO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9248E4019CAFF3DEDFC740 /* Pods_PACTGO.framework */; };
+		EC3C43D02152854A00D97163 /* MessageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3C43CF2152854A00D97163 /* MessageListTableViewCell.swift */; };
+		EC4A524221535503009AF4A4 /* PatientHistoryMonthHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A524121535503009AF4A4 /* PatientHistoryMonthHeaderTableViewCell.swift */; };
+		EC4A524421537B3B009AF4A4 /* FindYourTherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A524321537B3B009AF4A4 /* FindYourTherapistViewController.swift */; };
+		ECD0F78F215230B6001A3969 /* SelectTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F78E215230B6001A3969 /* SelectTimeTableViewCell.swift */; };
+		ECD0F791215230DA001A3969 /* SelectDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F790215230DA001A3969 /* SelectDateCollectionViewCell.swift */; };
+		ECD0F794215231F8001A3969 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F793215231F8001A3969 /* CircleImageView.swift */; };
+		ECD0F79621523391001A3969 /* SelectDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F79521523391001A3969 /* SelectDateViewController.swift */; };
+		ECD0F798215233A7001A3969 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F797215233A7001A3969 /* SelectTimeViewController.swift */; };
+		ECD0F79B2152415B001A3969 /* CalendarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F79A2152415B001A3969 /* CalendarExtension.swift */; };
+		ECD0F79D2152419A001A3969 /* MonthDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F79C2152419A001A3969 /* MonthDate.swift */; };
+		ECD42E28215321C000376490 /* PatientScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD42E27215321C000376490 /* PatientScheduleCollectionViewCell.swift */; };
+		ECD42E2A21533CD200376490 /* PatientScheduleHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD42E2921533CD200376490 /* PatientScheduleHeaderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C9248E4019CAFF3DEDFC740 /* Pods_PACTGO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PACTGO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		843924032139985100F27D2C /* PatientHistoryList2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHistoryList2TableViewCell.swift; sourceTree = "<group>"; };
-		843924042139985100F27D2C /* PatientHistoryList2TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientHistoryList2TableViewCell.xib; sourceTree = "<group>"; };
 		843AA1F42136D41B0073760A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		843AA1F82136E8990073760A /* PickPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPTViewController.swift; sourceTree = "<group>"; };
 		843AA1FC2136ED140073760A /* PatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
@@ -69,19 +73,13 @@
 		843DBD542137D2B000390065 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
 		843DBD582137DE2700390065 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
 		843DBD5C2137E2F200390065 /* PatientHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHistoryViewController.swift; sourceTree = "<group>"; };
-		843DBD602137E46800390065 /* MessageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewCell.swift; sourceTree = "<group>"; };
-		843DBD612137E46800390065 /* MessageListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageListTableViewCell.xib; sourceTree = "<group>"; };
 		843DBD64213818F600390065 /* PatientHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHistoryTableViewCell.swift; sourceTree = "<group>"; };
-		843DBD65213818F600390065 /* PatientHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientHistoryTableViewCell.xib; sourceTree = "<group>"; };
 		843DBD6821381CB800390065 /* PatientHistoryList2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHistoryList2ViewController.swift; sourceTree = "<group>"; };
 		843DBD6C2138262800390065 /* PADetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PADetailViewController.swift; sourceTree = "<group>"; };
 		843DBD7021383AAC00390065 /* PatientProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileViewController.swift; sourceTree = "<group>"; };
 		843DBD742138A61300390065 /* PatientScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScheduleViewController.swift; sourceTree = "<group>"; };
-		843DBD782138BB3600390065 /* PatientScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
-		843DBD792138BB3600390065 /* PatientScheduleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientScheduleCollectionViewCell.xib; sourceTree = "<group>"; };
 		843DBD7C2138C8B300390065 /* PatientSchedule2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSchedule2ViewController.swift; sourceTree = "<group>"; };
 		843DBD802138CD0200390065 /* PatientScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScheduleTableViewCell.swift; sourceTree = "<group>"; };
-		843DBD812138CD0200390065 /* PatientScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		844C88D02136AAFB0061A076 /* CreateAccount2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount2ViewController.swift; sourceTree = "<group>"; };
 		8467445521362F1A002E6694 /* BillingSheet1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingSheet1ViewController.swift; sourceTree = "<group>"; };
 		84674459213640EE002E6694 /* BillingSheet2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingSheet2ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +103,18 @@
 		84D3927620BC303C00306D40 /* PatientForm2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientForm2ViewController.swift; sourceTree = "<group>"; };
 		84D3927A20BC3DA100306D40 /* PatientForm1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientForm1ViewController.swift; sourceTree = "<group>"; };
 		D720C7D7AEFD6F62EB2240E7 /* Pods-PACTGO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PACTGO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PACTGO/Pods-PACTGO.debug.xcconfig"; sourceTree = "<group>"; };
+		EC3C43CF2152854A00D97163 /* MessageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewCell.swift; sourceTree = "<group>"; };
+		EC4A524121535503009AF4A4 /* PatientHistoryMonthHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHistoryMonthHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		EC4A524321537B3B009AF4A4 /* FindYourTherapistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourTherapistViewController.swift; sourceTree = "<group>"; };
+		ECD0F78E215230B6001A3969 /* SelectTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeTableViewCell.swift; sourceTree = "<group>"; };
+		ECD0F790215230DA001A3969 /* SelectDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECD0F793215231F8001A3969 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CircleImageView.swift; path = PACTGO/CustomView/CircleImageView.swift; sourceTree = SOURCE_ROOT; };
+		ECD0F79521523391001A3969 /* SelectDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateViewController.swift; sourceTree = "<group>"; };
+		ECD0F797215233A7001A3969 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
+		ECD0F79A2152415B001A3969 /* CalendarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExtension.swift; sourceTree = "<group>"; };
+		ECD0F79C2152419A001A3969 /* MonthDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthDate.swift; sourceTree = "<group>"; };
+		ECD42E27215321C000376490 /* PatientScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECD42E2921533CD200376490 /* PatientScheduleHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScheduleHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		F70A69A3D387ED0FC49DA0C4 /* Pods-PACTGO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PACTGO.release.xcconfig"; path = "Pods/Target Support Files/Pods-PACTGO/Pods-PACTGO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,9 +150,9 @@
 		848A25E4213A897F003CBF8E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				84BFFDAF20B89A3700D70E9F /* SideMenuViewController.swift */,
 				84D3927220BC264E00306D40 /* WelcomeViewController.swift */,
 				84D3927620BC303C00306D40 /* PatientForm2ViewController.swift */,
+				84BFFDAF20B89A3700D70E9F /* SideMenuViewController.swift */,
 				84D3927A20BC3DA100306D40 /* PatientForm1ViewController.swift */,
 				84752C9B20BC681600EE23FD /* MainViewController.swift */,
 				84752CA120BD873900EE23FD /* HistoryViewController.swift */,
@@ -171,6 +181,9 @@
 				843DBD742138A61300390065 /* PatientScheduleViewController.swift */,
 				843DBD7C2138C8B300390065 /* PatientSchedule2ViewController.swift */,
 				848C83222142181D00C75860 /* RateViewController.swift */,
+				ECD0F79521523391001A3969 /* SelectDateViewController.swift */,
+				ECD0F797215233A7001A3969 /* SelectTimeViewController.swift */,
+				EC4A524321537B3B009AF4A4 /* FindYourTherapistViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,16 +200,15 @@
 		848A25E6213A8B1C003CBF8E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				843DBD602137E46800390065 /* MessageListTableViewCell.swift */,
-				843DBD612137E46800390065 /* MessageListTableViewCell.xib */,
 				843DBD64213818F600390065 /* PatientHistoryTableViewCell.swift */,
-				843DBD65213818F600390065 /* PatientHistoryTableViewCell.xib */,
+				EC4A524121535503009AF4A4 /* PatientHistoryMonthHeaderTableViewCell.swift */,
 				843924032139985100F27D2C /* PatientHistoryList2TableViewCell.swift */,
-				843924042139985100F27D2C /* PatientHistoryList2TableViewCell.xib */,
-				843DBD782138BB3600390065 /* PatientScheduleCollectionViewCell.swift */,
-				843DBD792138BB3600390065 /* PatientScheduleCollectionViewCell.xib */,
 				843DBD802138CD0200390065 /* PatientScheduleTableViewCell.swift */,
-				843DBD812138CD0200390065 /* PatientScheduleTableViewCell.xib */,
+				ECD0F78E215230B6001A3969 /* SelectTimeTableViewCell.swift */,
+				ECD0F790215230DA001A3969 /* SelectDateCollectionViewCell.swift */,
+				EC3C43CF2152854A00D97163 /* MessageListTableViewCell.swift */,
+				ECD42E27215321C000376490 /* PatientScheduleCollectionViewCell.swift */,
+				ECD42E2921533CD200376490 /* PatientScheduleHeaderTableViewCell.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -222,6 +234,8 @@
 		84BFFDAC20B89A3700D70E9F /* PACTGO */ = {
 			isa = PBXGroup;
 			children = (
+				ECD0F7992152413F001A3969 /* Extension */,
+				ECD0F792215231CA001A3969 /* CustomView */,
 				848A25E6213A8B1C003CBF8E /* ViewModels */,
 				848A25E4213A897F003CBF8E /* ViewControllers */,
 				848A25E5213A8AEE003CBF8E /* Storyboards */,
@@ -230,6 +244,24 @@
 				84BFFDB920B89A3A00D70E9F /* Info.plist */,
 			);
 			path = PACTGO;
+			sourceTree = "<group>";
+		};
+		ECD0F792215231CA001A3969 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				ECD0F793215231F8001A3969 /* CircleImageView.swift */,
+			);
+			name = CustomView;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		ECD0F7992152413F001A3969 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ECD0F79A2152415B001A3969 /* CalendarExtension.swift */,
+				ECD0F79C2152419A001A3969 /* MonthDate.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,14 +324,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843924062139985100F27D2C /* PatientHistoryList2TableViewCell.xib in Resources */,
 				84BFFDB820B89A3A00D70E9F /* LaunchScreen.storyboard in Resources */,
-				843DBD632137E46800390065 /* MessageListTableViewCell.xib in Resources */,
 				84BFFDB520B89A3A00D70E9F /* Assets.xcassets in Resources */,
 				848A25E3213A7F8B003CBF8E /* Main.storyboard in Resources */,
-				843DBD67213818F600390065 /* PatientHistoryTableViewCell.xib in Resources */,
-				843DBD832138CD0200390065 /* PatientScheduleTableViewCell.xib in Resources */,
-				843DBD7B2138BB3600390065 /* PatientScheduleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,20 +388,27 @@
 				843DBD4E2137BEFB00390065 /* TherapistViewController.swift in Sources */,
 				84752CAB20BD8E8800EE23FD /* HelpDetailViewController.swift in Sources */,
 				843DBD5E2137E2F200390065 /* PatientHistoryViewController.swift in Sources */,
-				843DBD7A2138BB3600390065 /* PatientScheduleCollectionViewCell.swift in Sources */,
 				843DBD522137CAD400390065 /* InboxViewController.swift in Sources */,
 				84D3927420BC264E00306D40 /* WelcomeViewController.swift in Sources */,
 				84BFFDB020B89A3700D70E9F /* SideMenuViewController.swift in Sources */,
+				ECD0F794215231F8001A3969 /* CircleImageView.swift in Sources */,
 				843DBD5A2137DE2700390065 /* MessageListViewController.swift in Sources */,
 				84D3927C20BC3DA100306D40 /* PatientForm1ViewController.swift in Sources */,
+				ECD0F791215230DA001A3969 /* SelectDateCollectionViewCell.swift in Sources */,
 				84752CA720BD89C100EE23FD /* HelpViewController.swift in Sources */,
 				843DBD7221383AAC00390065 /* PatientProfileViewController.swift in Sources */,
+				ECD0F79D2152419A001A3969 /* MonthDate.swift in Sources */,
 				843DBD66213818F600390065 /* PatientHistoryTableViewCell.swift in Sources */,
+				ECD42E28215321C000376490 /* PatientScheduleCollectionViewCell.swift in Sources */,
 				84752CB220BD95AD00EE23FD /* PGNavigationController.swift in Sources */,
 				843DBD7E2138C8B300390065 /* PatientSchedule2ViewController.swift in Sources */,
+				EC4A524221535503009AF4A4 /* PatientHistoryMonthHeaderTableViewCell.swift in Sources */,
 				843AA1FA2136E8990073760A /* PickPTViewController.swift in Sources */,
 				843AA1F62136D41B0073760A /* SignInViewController.swift in Sources */,
+				ECD0F798215233A7001A3969 /* SelectTimeViewController.swift in Sources */,
 				848C83232142181D00C75860 /* RateViewController.swift in Sources */,
+				EC4A524421537B3B009AF4A4 /* FindYourTherapistViewController.swift in Sources */,
+				ECD42E2A21533CD200376490 /* PatientScheduleHeaderTableViewCell.swift in Sources */,
 				843DBD6E2138262800390065 /* PADetailViewController.swift in Sources */,
 				84752C9D20BC681600EE23FD /* MainViewController.swift in Sources */,
 				8467445B213640EE002E6694 /* BillingSheet2ViewController.swift in Sources */,
@@ -382,6 +416,7 @@
 				84752CA320BD873900EE23FD /* HistoryViewController.swift in Sources */,
 				843DBD6A21381CB800390065 /* PatientHistoryList2ViewController.swift in Sources */,
 				843DBD822138CD0200390065 /* PatientScheduleTableViewCell.swift in Sources */,
+				EC3C43D02152854A00D97163 /* MessageListTableViewCell.swift in Sources */,
 				843DBD4A2137946900390065 /* YourAccountViewController.swift in Sources */,
 				843DBD462137884300390065 /* HurtViewController.swift in Sources */,
 				843DBD762138A61300390065 /* PatientScheduleViewController.swift in Sources */,
@@ -390,9 +425,11 @@
 				843924052139985100F27D2C /* PatientHistoryList2TableViewCell.swift in Sources */,
 				8467445F21364294002E6694 /* BillingSheet3ViewController.swift in Sources */,
 				84752CAF20BD8F9A00EE23FD /* FoundTherapistViewController.swift in Sources */,
+				ECD0F79B2152415B001A3969 /* CalendarExtension.swift in Sources */,
 				843AA1FE2136ED140073760A /* PatientViewController.swift in Sources */,
-				843DBD622137E46800390065 /* MessageListTableViewCell.swift in Sources */,
 				8467445721362F1A002E6694 /* BillingSheet1ViewController.swift in Sources */,
+				ECD0F79621523391001A3969 /* SelectDateViewController.swift in Sources */,
+				ECD0F78F215230B6001A3969 /* SelectTimeTableViewCell.swift in Sources */,
 				84BFFDAE20B89A3700D70E9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,7 +570,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JZ562WR45;
 				INFOPLIST_FILE = PACTGO/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pactgo.app.PACTGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -549,7 +589,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JZ562WR45;
 				INFOPLIST_FILE = PACTGO/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pactgo.app.PACTGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -14,11 +14,28 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        initUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initUI(){
+        let navBar = self.navigationController?.navigationBar
+        navBar?.setBackgroundImage(#imageLiteral(resourceName: "topbar"), for: .default)
+        navBar?.shadowImage = UIImage()
+        navBar?.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        
+        let imageView = UIImageView(frame: CGRect(x: 0,
+                                                  y: 0,
+                                                  width: 40,
+                                                  height: 40))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = #imageLiteral(resourceName: "logo").withRenderingMode(.alwaysOriginal)
+        navigationItem.titleView = imageView
     }
     
 

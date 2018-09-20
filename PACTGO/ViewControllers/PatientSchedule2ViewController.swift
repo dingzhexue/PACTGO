@@ -8,40 +8,40 @@
 
 import UIKit
 
-class PatientSchedule2ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var PatientScheduleView: UITableView!
-    
-    var scheduleArray : Array = [["Schedule" : "8:00 am Appointment", "Schedule" : "9:00 am Appointment", "Schedule" : "10:00 am Appointment", "Address": "HongKong"]]
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return scheduleArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PatientScheduleTableViewCell", for: indexPath) as! PatientScheduleTableViewCell
-        let dict = scheduleArray[indexPath.row]
-        
-        cell.therapyApp.text = dict["Schedule"]
-        cell.checkBtn.setImage(UIImage(named: "checkline-logo"), for: .normal)
-        cell.addRess.text = dict["Address"]
-        return cell
-        
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
+class PatientSchedule2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib.init(nibName: "PatientSchedule", bundle: nil)
-        self.PatientScheduleView.register(nib, forCellReuseIdentifier: "PatientSchedule")
+        
         // Do any additional setup after loading the view.
+        initUI()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    func initUI(){
+        let navBar = self.navigationController?.navigationBar
+        navBar?.setBackgroundImage(#imageLiteral(resourceName: "topbar"), for: .default)
+        navBar?.shadowImage = UIImage()
+        navBar?.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        
+        title = "Schedule2"
+        let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
+                                      style: .plain,
+                                      target: self,
+                                      action: #selector(btnBackTapped))
+        navigationItem.titleView?.tintColor = UIColor.white
+        navigationItem.leftBarButtonItem = leftBtn
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+    }
+    
+    // MARK: - Navigation button actions
+    @objc func btnBackTapped(){
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

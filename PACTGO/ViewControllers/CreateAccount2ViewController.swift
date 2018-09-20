@@ -36,21 +36,12 @@ class CreateAccount2ViewController: UIViewController {
                                       style: .plain,
                                       target: self,
                                       action: #selector(btnBackTapped))
-        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
-                                       style: .plain,
-                                       target: self,
-                                       action: #selector(btnMenuTapped))
-        navigationItem.rightBarButtonItem = rightBtn
         navigationItem.leftBarButtonItem = leftBtn
         
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
     
     // MARK: - Navigation button actions
-    @objc func btnMenuTapped(){
-        sideMenuController?.revealMenu()
-    }
-    
     @objc func btnBackTapped(){
         navigationController?.popViewController(animated: true)
     }

@@ -12,7 +12,7 @@ class PatientScheduleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var therapyApp: UILabel!
     @IBOutlet weak var addRess: UILabel!
-    @IBOutlet weak var checkBtn: UIButton!
+    @IBOutlet weak var checkBtn: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

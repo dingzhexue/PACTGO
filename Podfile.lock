@@ -13,7 +13,7 @@ DEPENDENCIES:
   - SideMenuSwift
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AZTabBar
     - Cosmos
     - EasyNotificationBadge
@@ -29,4 +29,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ebcbe44a6a80400236fbdec63a610a4db1cbc496
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

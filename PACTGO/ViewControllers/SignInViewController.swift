@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 class SignInViewController: UIViewController {
 
@@ -36,21 +37,12 @@ class SignInViewController: UIViewController {
                                       style: .plain,
                                       target: self,
                                       action: #selector(btnBackTapped))
-        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
-                                       style: .plain,
-                                       target: self,
-                                       action: #selector(btnMenuTapped))
-        navigationItem.rightBarButtonItem = rightBtn
         navigationItem.leftBarButtonItem = leftBtn
 
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
     
     // MARK: - Navigation button actions
-    @objc func btnMenuTapped(){
-        sideMenuController?.revealMenu()
-    }
-    
     @objc func btnBackTapped(){
         navigationController?.popViewController(animated: true)
     }
@@ -60,6 +52,21 @@ class SignInViewController: UIViewController {
         
     }
 
+    @IBAction func btnSignInTapped(_ sender: Any) {
+        let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "SideMenuViewController")
+        let targetVC = self.storyboard?.instantiateViewController(withIdentifier: "MainRootViewController")
+        //        window = UIWindow(frame: UIScreen.main.bounds)
+        //        window?.rootViewController = SideMenuController(contentViewController: self,
+        //                                                        menuViewController: menuVC!)
+        self.navigationController?.pushViewController(SideMenuController(contentViewController: targetVC!, menuViewController: menuVC!),
+                                                      animated: true)
+        SideMenuController.preferences.basic.menuWidth = 240
+        SideMenuController.preferences.basic.statusBarBehavior = .fade
+        SideMenuController.preferences.basic.direction = .right
+        SideMenuController.preferences.basic.enablePanGesture = true
+        SideMenuController.preferences.basic.supportedOrientations = .portrait
+        navigationController?.isNavigationBarHidden = true
+    }
     
 
 

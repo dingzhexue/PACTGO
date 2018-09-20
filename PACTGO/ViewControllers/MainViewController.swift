@@ -12,12 +12,27 @@ import AZTabBar
 
 class MainViewController: UIViewController {
     
+//    var window: UIWindow!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         registerNotifications()
         navigationController?.navigationBar.isHidden = false
+        
+//        let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "SideMenuViewController")
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = SideMenuController(contentViewController: self,
+//                                                        menuViewController: menuVC!)
+//        SideMenuController.preferences.basic.menuWidth = 240
+//        SideMenuController.preferences.basic.statusBarBehavior = .fade
+//        SideMenuController.preferences.basic.direction = .right
+//        SideMenuController.preferences.basic.enablePanGesture = true
+//        SideMenuController.preferences.basic.supportedOrientations = .portrait
+//
+//        window?.makeKeyAndVisible()
+        
         initUI()
     }
     
@@ -56,11 +71,12 @@ class MainViewController: UIViewController {
                                                 self.performSegue(withIdentifier: "GoToInboxPage", sender: self)
                                                 self.sideMenuController?.hideMenu()
         }
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToSignInPage"),
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToInitPage"),
                                                object: nil,
                                                queue: OperationQueue.main) { (notification) in
-                                                self.performSegue(withIdentifier: "GoToSignInPage", sender: self)
-                                                self.sideMenuController?.hideMenu()
+//                                                self.sideMenuController?.hideMenu()
+//                                                self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "init_view")
+//                                                self.window.makeKeyAndVisible()
         }
     }
     
@@ -101,7 +117,9 @@ class MainViewController: UIViewController {
         let tabController = AZTabBarController.insert(into: self, withTabIconNames: icons)
         let chlidVC0 = storyboard?.instantiateViewController(withIdentifier: "YourAccountNavigationViewController")
         let chlidVC1 = storyboard?.instantiateViewController(withIdentifier: "PatientScheduleNavigationViewController")
-        let chlidVC2 = storyboard?.instantiateViewController(withIdentifier: "HistoryNavigationViewController")
+//        let chlidVC2 = storyboard?.instantiateViewController(withIdentifier: "HistoryNavigationViewController")
+        let chlidVC2 = storyboard?.instantiateViewController(withIdentifier: "HistoryDetailNavigationViewController")
+        
         tabController.setViewController(chlidVC0!, atIndex: 0)
         tabController.setViewController(chlidVC1!, atIndex: 1)
         tabController.setViewController(chlidVC2!, atIndex: 2)

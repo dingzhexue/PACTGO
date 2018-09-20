@@ -10,7 +10,7 @@ import UIKit
 
 class SideMenuViewController: UITableViewController {
     
-    let viewTitles = ["Appointment", "My Account", "Help", "Inbox", "Login/Logout"]
+    let viewTitles = ["Appointment", "My Account", "Help", "Inbox", "Logout"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +61,7 @@ class SideMenuViewController: UITableViewController {
                                             object: nil)
             break
         case 4:
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "GoToSignInPage"),
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "GoToInitPage"),
                                             object: nil)
             break
         default:

@@ -9,8 +9,8 @@
 import UIKit
 
 class PatientHistoryTableViewCell: UITableViewCell {
-    @IBOutlet weak var PainHistoryCell: UILabel!
-    @IBOutlet weak var PainHistoryBtn: UIButton!
+    @IBOutlet weak var painLabel: UILabel!
+    @IBOutlet weak var arrowImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +22,4 @@ class PatientHistoryTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }

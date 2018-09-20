@@ -9,8 +9,8 @@
 import UIKit
 
 class PatientHistoryList2TableViewCell: UITableViewCell {
-    @IBOutlet weak var timeField: UITextField!
-    @IBOutlet weak var clickBtn: UIButton!
+    @IBOutlet weak var timeField: UILabel!
+    @IBOutlet weak var clickBtn: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
