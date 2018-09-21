@@ -28,6 +28,7 @@ class SelectDateViewController: UIViewController, UICollectionViewDataSource, UI
         let startDay = startDayAtMonth(in: 0)
         startWeekDay = calendar.component(.weekday, from: startDay) - 1
         numberOfDays = calendar.numberOfDaysInMonth(date: startDay)
+        initUI()
     }
     
     func startDayAtMonth(in section: Int) -> Date {
@@ -49,6 +50,37 @@ class SelectDateViewController: UIViewController, UICollectionViewDataSource, UI
         return calendar.monthDate(from: date)
     }
     
+    func initUI(){
+        title = "Select Date"
+        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
+                                       style: .plain,
+                                       target: self,
+                                       action: #selector(btnMenuTapped))
+        let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
+                                      style: .plain,
+                                      target: self,
+                                      action: #selector(btnBackTapped))
+        navigationItem.titleView?.tintColor = UIColor.white
+        navigationItem.leftBarButtonItem = leftBtn
+        navigationItem.rightBarButtonItem = rightBtn
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.init(red: 51 / 255,
+                                                                    green: 192 / 255,
+                                                                    blue: 174 / 255,
+                                                                    alpha: 1.0)
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+    }
+    
+    // MARK: - Navigation button actions
+    @objc func btnMenuTapped(){
+        sideMenuController?.revealMenu()
+    }
+    
+    @objc func btnBackTapped(){
+        navigationController?.popViewController(animated: true)
+    }
+}
+
+extension SelectDateViewController{
     // MARK: DateCollectionView Datasource and Delegate
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

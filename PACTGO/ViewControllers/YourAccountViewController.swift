@@ -31,18 +31,8 @@ class YourAccountViewController: UIViewController {
         self.navigationController?.view.backgroundColor = .clear
         
         title = "Your Account"
-        let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
-                                      style: .plain,
-                                      target: self,
-                                      action: #selector(btnBackTapped))
         navigationItem.titleView?.tintColor = UIColor.white
-        navigationItem.leftBarButtonItem = leftBtn
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-    }
-    
-    // MARK: - Navigation button actions
-    @objc func btnBackTapped(){
-        navigationController?.popViewController(animated: true)
     }
     
     /*

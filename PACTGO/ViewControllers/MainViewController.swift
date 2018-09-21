@@ -10,17 +10,16 @@ import UIKit
 import SideMenuSwift
 import AZTabBar
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, AZTabBarDelegate {
     
 //    var window: UIWindow!
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        registerNotifications()
-        navigationController?.navigationBar.isHidden = false
-        
+        registerNotifications()        
 //        let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "SideMenuViewController")
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        window?.rootViewController = SideMenuController(contentViewController: self,
@@ -38,7 +37,6 @@ class MainViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        navigationController?.navigationBar.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,33 +48,30 @@ class MainViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToAppointmentPage"),
                                                object: nil,
                                                queue: OperationQueue.main) { (notification) in
+                                                self.navigationController?.popViewController(animated: false)
                                                 self.performSegue(withIdentifier: "GoToAppointmentPage", sender: self)
                                                 self.sideMenuController?.hideMenu()
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToYourAccountPage"),
                                                object: nil,
                                                queue: OperationQueue.main) { (notification) in
+                                                self.navigationController?.popViewController(animated: false)
                                                 self.initTabBarController()
                                                 self.sideMenuController?.hideMenu()
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToHelpPage"),
                                                object: nil,
                                                queue: OperationQueue.main) { (notification) in
+                                                self.navigationController?.popViewController(animated: false)
                                                 self.performSegue(withIdentifier: "GoToHelpPage", sender: self)
                                                 self.sideMenuController?.hideMenu()
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToInboxPage"),
                                                object: nil,
                                                queue: OperationQueue.main) { (notification) in
+                                                self.navigationController?.popViewController(animated: false)
                                                 self.performSegue(withIdentifier: "GoToInboxPage", sender: self)
                                                 self.sideMenuController?.hideMenu()
-        }
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToInitPage"),
-                                               object: nil,
-                                               queue: OperationQueue.main) { (notification) in
-//                                                self.sideMenuController?.hideMenu()
-//                                                self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "init_view")
-//                                                self.window.makeKeyAndVisible()
         }
     }
     
@@ -89,10 +84,10 @@ class MainViewController: UIViewController {
         
         let imageView = UIImageView(frame: CGRect(x: 0,
                                                   y: 0,
-                                                  width: 40,
-                                                  height: 40))
+                                                  width: 30,
+                                                  height: 30))
         imageView.contentMode = .scaleAspectFit
-        imageView.image = #imageLiteral(resourceName: "logo").withRenderingMode(.alwaysOriginal)
+        imageView.image = #imageLiteral(resourceName: "logo-head").withRenderingMode(.alwaysOriginal)
         navigationItem.titleView = imageView
         
         let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
@@ -109,36 +104,35 @@ class MainViewController: UIViewController {
     
     // MARK: - Memeber functions
     func initTabBarController(){
-        navigationController?.navigationBar.isHidden = true
         var icons = [String]()
         icons.append("icon-account")
         icons.append("icon-schedule")
         icons.append("icon-history")
-        let tabController = AZTabBarController.insert(into: self, withTabIconNames: icons)
+        appDelegate.tabController = AZTabBarController.insert(into: self, withTabIconNames: icons)
         let chlidVC0 = storyboard?.instantiateViewController(withIdentifier: "YourAccountNavigationViewController")
         let chlidVC1 = storyboard?.instantiateViewController(withIdentifier: "PatientScheduleNavigationViewController")
 //        let chlidVC2 = storyboard?.instantiateViewController(withIdentifier: "HistoryNavigationViewController")
         let chlidVC2 = storyboard?.instantiateViewController(withIdentifier: "HistoryDetailNavigationViewController")
         
-        tabController.setViewController(chlidVC0!, atIndex: 0)
-        tabController.setViewController(chlidVC1!, atIndex: 1)
-        tabController.setViewController(chlidVC2!, atIndex: 2)
-        tabController.setTitle("Account", atIndex: 0)
-        tabController.setTitle("Schedule", atIndex: 1)
-        tabController.setTitle("History", atIndex: 2)
-        
-        tabController.defaultColor = .gray
-        tabController.buttonsBackgroundColor = .white
-        tabController.selectionIndicatorColor = UIColor.init(red: 51 / 255,
-                                                              green: 192 / 255,
-                                                              blue: 174 / 255,
-                                                              alpha: 1.0)
-        tabController.animateTabChange = true
-        tabController.tabBarHeight = 70
-        
-        navigationController?.pushViewController(tabController, animated: true)
+        appDelegate.tabController?.setViewController(chlidVC0!, atIndex: 0)
+        appDelegate.tabController?.setViewController(chlidVC1!, atIndex: 1)
+        appDelegate.tabController?.setViewController(chlidVC2!, atIndex: 2)
+        appDelegate.tabController?.setTitle("Account", atIndex: 0)
+        appDelegate.tabController?.setTitle("Schedule", atIndex: 1)
+        appDelegate.tabController?.setTitle("History", atIndex: 2)
+        appDelegate.tabController?.defaultColor = .gray
+        appDelegate.tabController?.selectedColor = UIColor.init(red: 51 / 255,
+                                                   green: 192 / 255,
+                                                   blue: 174 / 255,
+                                                   alpha: 1.0)
+        appDelegate.tabController?.buttonsBackgroundColor = .white
+        appDelegate.tabController?.selectionIndicatorHeight = 0
+        appDelegate.tabController?.animateTabChange = false
+        appDelegate.tabController?.tabBarHeight = 70
+        appDelegate.tabController?.delegate = self
+        navigationController?.navigationBar.isHidden = true
+        navigationController?.pushViewController(appDelegate.tabController!, animated: true)
     }
-
     
     // MARK: - Navigation button actions
     @objc func btnMenuTapped(){
@@ -164,4 +158,25 @@ class MainViewController: UIViewController {
     }
     */
 
+}
+
+extension MainViewController{
+    // MARK: - AZTabBarDelegate
+    func tabBar(_ tabBar: AZTabBarController, didSelectTabAtIndex index: Int) {
+        switch index {
+        case 0:
+            appDelegate.tabController?.buttonsBackgroundColor = .white
+            break
+        case 1:
+            appDelegate.tabController?.buttonsBackgroundColor = UIColor.init(red: 54 / 255,
+                                                                             green: 54 / 255,
+                                                                             blue: 54 / 255,
+                                                                             alpha: 1.0)
+            break
+        case 2:
+            appDelegate.tabController?.buttonsBackgroundColor = .white
+        default:
+            break
+        }
+    }
 }

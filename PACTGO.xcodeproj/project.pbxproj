@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841BE9C3215480A400490899 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BE9C2215480A400490899 /* ConfirmationViewController.swift */; };
 		843924052139985100F27D2C /* PatientHistoryList2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843924032139985100F27D2C /* PatientHistoryList2TableViewCell.swift */; };
 		843AA1F62136D41B0073760A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA1F42136D41B0073760A /* SignInViewController.swift */; };
 		843AA1FA2136E8990073760A /* PickPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA1F82136E8990073760A /* PickPTViewController.swift */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		6C9248E4019CAFF3DEDFC740 /* Pods_PACTGO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PACTGO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841BE9C2215480A400490899 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		843924032139985100F27D2C /* PatientHistoryList2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHistoryList2TableViewCell.swift; sourceTree = "<group>"; };
 		843AA1F42136D41B0073760A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		843AA1F82136E8990073760A /* PickPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPTViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				ECD0F79521523391001A3969 /* SelectDateViewController.swift */,
 				ECD0F797215233A7001A3969 /* SelectTimeViewController.swift */,
 				EC4A524321537B3B009AF4A4 /* FindYourTherapistViewController.swift */,
+				841BE9C2215480A400490899 /* ConfirmationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				843DBD5E2137E2F200390065 /* PatientHistoryViewController.swift in Sources */,
 				843DBD522137CAD400390065 /* InboxViewController.swift in Sources */,
 				84D3927420BC264E00306D40 /* WelcomeViewController.swift in Sources */,
+				841BE9C3215480A400490899 /* ConfirmationViewController.swift in Sources */,
 				84BFFDB020B89A3700D70E9F /* SideMenuViewController.swift in Sources */,
 				ECD0F794215231F8001A3969 /* CircleImageView.swift in Sources */,
 				843DBD5A2137DE2700390065 /* MessageListViewController.swift in Sources */,

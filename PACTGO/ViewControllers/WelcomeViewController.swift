@@ -24,18 +24,29 @@ class WelcomeViewController: UIViewController {
     
     func initUI(){
         let navBar = self.navigationController?.navigationBar
-        navBar?.setBackgroundImage(#imageLiteral(resourceName: "topbar"), for: .default)
+        navBar?.setBackgroundImage(#imageLiteral(resourceName: "topbar").withRenderingMode(.alwaysOriginal), for: .default)
         navBar?.shadowImage = UIImage()
         navBar?.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         
         let imageView = UIImageView(frame: CGRect(x: 0,
                                                   y: 0,
-                                                  width: 40,
-                                                  height: 40))
+                                                  width: 30,
+                                                  height: 30))
         imageView.contentMode = .scaleAspectFit
-        imageView.image = #imageLiteral(resourceName: "logo").withRenderingMode(.alwaysOriginal)
+        imageView.image = #imageLiteral(resourceName: "logo-head").withRenderingMode(.alwaysOriginal)
         navigationItem.titleView = imageView
+        
+        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
+                                       style: .plain,
+                                       target: self,
+                                       action: nil)
+        let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "homelogo").withRenderingMode(.alwaysOriginal),
+                                      style: .plain,
+                                      target: self,
+                                      action: nil)
+        navigationItem.rightBarButtonItem = rightBtn
+        navigationItem.leftBarButtonItem = leftBtn
     }
     
 

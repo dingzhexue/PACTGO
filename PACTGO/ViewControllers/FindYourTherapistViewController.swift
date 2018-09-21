@@ -57,7 +57,6 @@ class FindYourTherapistViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-
     /*
     // MARK: - Navigation
 
