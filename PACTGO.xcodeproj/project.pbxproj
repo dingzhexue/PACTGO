@@ -43,6 +43,7 @@
 		84BFFDB020B89A3700D70E9F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFFDAF20B89A3700D70E9F /* SideMenuViewController.swift */; };
 		84BFFDB520B89A3A00D70E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BFFDB420B89A3A00D70E9F /* Assets.xcassets */; };
 		84BFFDB820B89A3A00D70E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BFFDB620B89A3A00D70E9F /* LaunchScreen.storyboard */; };
+		84C758922155F4D9002C0AAB /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C758912155F4D9002C0AAB /* CircleImageView.swift */; };
 		84D3927420BC264E00306D40 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3927220BC264E00306D40 /* WelcomeViewController.swift */; };
 		84D3927820BC303C00306D40 /* PatientForm2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3927620BC303C00306D40 /* PatientForm2ViewController.swift */; };
 		84D3927C20BC3DA100306D40 /* PatientForm1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3927A20BC3DA100306D40 /* PatientForm1ViewController.swift */; };
@@ -52,7 +53,6 @@
 		EC4A524421537B3B009AF4A4 /* FindYourTherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A524321537B3B009AF4A4 /* FindYourTherapistViewController.swift */; };
 		ECD0F78F215230B6001A3969 /* SelectTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F78E215230B6001A3969 /* SelectTimeTableViewCell.swift */; };
 		ECD0F791215230DA001A3969 /* SelectDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F790215230DA001A3969 /* SelectDateCollectionViewCell.swift */; };
-		ECD0F794215231F8001A3969 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F793215231F8001A3969 /* CircleImageView.swift */; };
 		ECD0F79621523391001A3969 /* SelectDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F79521523391001A3969 /* SelectDateViewController.swift */; };
 		ECD0F798215233A7001A3969 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F797215233A7001A3969 /* SelectTimeViewController.swift */; };
 		ECD0F79B2152415B001A3969 /* CalendarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0F79A2152415B001A3969 /* CalendarExtension.swift */; };
@@ -101,6 +101,7 @@
 		84BFFDB420B89A3A00D70E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84BFFDB720B89A3A00D70E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84BFFDB920B89A3A00D70E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C758912155F4D9002C0AAB /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleImageView.swift; path = PACTGO/CustomView/CircleImageView.swift; sourceTree = SOURCE_ROOT; };
 		84D3927220BC264E00306D40 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		84D3927620BC303C00306D40 /* PatientForm2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientForm2ViewController.swift; sourceTree = "<group>"; };
 		84D3927A20BC3DA100306D40 /* PatientForm1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientForm1ViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +111,6 @@
 		EC4A524321537B3B009AF4A4 /* FindYourTherapistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourTherapistViewController.swift; sourceTree = "<group>"; };
 		ECD0F78E215230B6001A3969 /* SelectTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeTableViewCell.swift; sourceTree = "<group>"; };
 		ECD0F790215230DA001A3969 /* SelectDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateCollectionViewCell.swift; sourceTree = "<group>"; };
-		ECD0F793215231F8001A3969 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CircleImageView.swift; path = PACTGO/CustomView/CircleImageView.swift; sourceTree = SOURCE_ROOT; };
 		ECD0F79521523391001A3969 /* SelectDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateViewController.swift; sourceTree = "<group>"; };
 		ECD0F797215233A7001A3969 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
 		ECD0F79A2152415B001A3969 /* CalendarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExtension.swift; sourceTree = "<group>"; };
@@ -237,8 +237,8 @@
 		84BFFDAC20B89A3700D70E9F /* PACTGO */ = {
 			isa = PBXGroup;
 			children = (
+				84C758902155F4CB002C0AAB /* CustomView */,
 				ECD0F7992152413F001A3969 /* Extension */,
-				ECD0F792215231CA001A3969 /* CustomView */,
 				848A25E6213A8B1C003CBF8E /* ViewModels */,
 				848A25E4213A897F003CBF8E /* ViewControllers */,
 				848A25E5213A8AEE003CBF8E /* Storyboards */,
@@ -249,10 +249,10 @@
 			path = PACTGO;
 			sourceTree = "<group>";
 		};
-		ECD0F792215231CA001A3969 /* CustomView */ = {
+		84C758902155F4CB002C0AAB /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				ECD0F793215231F8001A3969 /* CircleImageView.swift */,
+				84C758912155F4D9002C0AAB /* CircleImageView.swift */,
 			);
 			name = CustomView;
 			path = "New Group";
@@ -395,7 +395,6 @@
 				84D3927420BC264E00306D40 /* WelcomeViewController.swift in Sources */,
 				841BE9C3215480A400490899 /* ConfirmationViewController.swift in Sources */,
 				84BFFDB020B89A3700D70E9F /* SideMenuViewController.swift in Sources */,
-				ECD0F794215231F8001A3969 /* CircleImageView.swift in Sources */,
 				843DBD5A2137DE2700390065 /* MessageListViewController.swift in Sources */,
 				84D3927C20BC3DA100306D40 /* PatientForm1ViewController.swift in Sources */,
 				ECD0F791215230DA001A3969 /* SelectDateCollectionViewCell.swift in Sources */,
@@ -417,6 +416,7 @@
 				84752C9D20BC681600EE23FD /* MainViewController.swift in Sources */,
 				8467445B213640EE002E6694 /* BillingSheet2ViewController.swift in Sources */,
 				84D3927820BC303C00306D40 /* PatientForm2ViewController.swift in Sources */,
+				84C758922155F4D9002C0AAB /* CircleImageView.swift in Sources */,
 				84752CA320BD873900EE23FD /* HistoryViewController.swift in Sources */,
 				843DBD6A21381CB800390065 /* PatientHistoryList2ViewController.swift in Sources */,
 				843DBD822138CD0200390065 /* PatientScheduleTableViewCell.swift in Sources */,

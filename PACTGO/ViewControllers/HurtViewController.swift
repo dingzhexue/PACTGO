@@ -12,6 +12,13 @@ class HurtViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
 
     @IBOutlet weak var txtDetail: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var btnBackPain: UIButton!
+    @IBOutlet weak var btnNeckPain: UIButton!
+    @IBOutlet weak var btnAnklePain: UIButton!
+    @IBOutlet weak var btnArmPain: UIButton!
+    @IBOutlet weak var btnHipPain: UIButton!
+    @IBOutlet weak var btnKneePain: UIButton!
+    @IBOutlet weak var btnShoulderPain: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
