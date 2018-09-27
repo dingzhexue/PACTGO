@@ -12,6 +12,16 @@
 		843AA1F62136D41B0073760A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA1F42136D41B0073760A /* SignInViewController.swift */; };
 		843AA1FA2136E8990073760A /* PickPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA1F82136E8990073760A /* PickPTViewController.swift */; };
 		843AA1FE2136ED140073760A /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AA1FC2136ED140073760A /* PatientViewController.swift */; };
+		843B9940215B4B820009C8B3 /* Muli.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B9936215B4B440009C8B3 /* Muli.ttf */; };
+		843B9941215B4B820009C8B3 /* Muli-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B9937215B4B4C0009C8B3 /* Muli-ExtraLightItalic.ttf */; };
+		843B9942215B4B820009C8B3 /* Muli Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B9938215B4B4D0009C8B3 /* Muli Light Italic.ttf */; };
+		843B9943215B4B820009C8B3 /* Muli-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B9939215B4B550009C8B3 /* Muli-ExtraLight.ttf */; };
+		843B9944215B4B820009C8B3 /* Muli-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B993A215B4B5D0009C8B3 /* Muli-SemiBold.ttf */; };
+		843B9945215B4B820009C8B3 /* Muli-Semi-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B993B215B4B680009C8B3 /* Muli-Semi-BoldItalic.ttf */; };
+		843B9946215B4B820009C8B3 /* Muli Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B993C215B4B680009C8B3 /* Muli Italic.ttf */; };
+		843B9947215B4B820009C8B3 /* Muli-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B993D215B4B700009C8B3 /* Muli-Bold.ttf */; };
+		843B9948215B4B820009C8B3 /* Muli-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B993E215B4B780009C8B3 /* Muli-BoldItalic.ttf */; };
+		843B9949215B4B820009C8B3 /* Muli Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 843B993F215B4B810009C8B3 /* Muli Light.ttf */; };
 		843DBD462137884300390065 /* HurtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD442137884300390065 /* HurtViewController.swift */; };
 		843DBD4A2137946900390065 /* YourAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD482137946900390065 /* YourAccountViewController.swift */; };
 		843DBD4E2137BEFB00390065 /* TherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DBD4C2137BEFB00390065 /* TherapistViewController.swift */; };
@@ -68,6 +78,16 @@
 		843AA1F42136D41B0073760A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		843AA1F82136E8990073760A /* PickPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPTViewController.swift; sourceTree = "<group>"; };
 		843AA1FC2136ED140073760A /* PatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
+		843B9936215B4B440009C8B3 /* Muli.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Muli.ttf; sourceTree = "<group>"; };
+		843B9937215B4B4C0009C8B3 /* Muli-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		843B9938215B4B4D0009C8B3 /* Muli Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli Light Italic.ttf"; sourceTree = "<group>"; };
+		843B9939215B4B550009C8B3 /* Muli-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLight.ttf"; sourceTree = "<group>"; };
+		843B993A215B4B5D0009C8B3 /* Muli-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-SemiBold.ttf"; sourceTree = "<group>"; };
+		843B993B215B4B680009C8B3 /* Muli-Semi-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Semi-BoldItalic.ttf"; sourceTree = "<group>"; };
+		843B993C215B4B680009C8B3 /* Muli Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli Italic.ttf"; sourceTree = "<group>"; };
+		843B993D215B4B700009C8B3 /* Muli-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Bold.ttf"; sourceTree = "<group>"; };
+		843B993E215B4B780009C8B3 /* Muli-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-BoldItalic.ttf"; sourceTree = "<group>"; };
+		843B993F215B4B810009C8B3 /* Muli Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli Light.ttf"; sourceTree = "<group>"; };
 		843DBD442137884300390065 /* HurtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtViewController.swift; sourceTree = "<group>"; };
 		843DBD482137946900390065 /* YourAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAccountViewController.swift; sourceTree = "<group>"; };
 		843DBD4C2137BEFB00390065 /* TherapistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +167,31 @@
 				F70A69A3D387ED0FC49DA0C4 /* Pods-PACTGO.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		843B9934215B4B1E0009C8B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				843B9935215B4B280009C8B3 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		843B9935215B4B280009C8B3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				843B993C215B4B680009C8B3 /* Muli Italic.ttf */,
+				843B9938215B4B4D0009C8B3 /* Muli Light Italic.ttf */,
+				843B993F215B4B810009C8B3 /* Muli Light.ttf */,
+				843B993D215B4B700009C8B3 /* Muli-Bold.ttf */,
+				843B993E215B4B780009C8B3 /* Muli-BoldItalic.ttf */,
+				843B9939215B4B550009C8B3 /* Muli-ExtraLight.ttf */,
+				843B9937215B4B4C0009C8B3 /* Muli-ExtraLightItalic.ttf */,
+				843B993B215B4B680009C8B3 /* Muli-Semi-BoldItalic.ttf */,
+				843B993A215B4B5D0009C8B3 /* Muli-SemiBold.ttf */,
+				843B9936215B4B440009C8B3 /* Muli.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		848A25E4213A897F003CBF8E /* ViewControllers */ = {
@@ -237,6 +282,7 @@
 		84BFFDAC20B89A3700D70E9F /* PACTGO */ = {
 			isa = PBXGroup;
 			children = (
+				843B9934215B4B1E0009C8B3 /* Resources */,
 				84C758902155F4CB002C0AAB /* CustomView */,
 				ECD0F7992152413F001A3969 /* Extension */,
 				848A25E6213A8B1C003CBF8E /* ViewModels */,
@@ -327,9 +373,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843B9944215B4B820009C8B3 /* Muli-SemiBold.ttf in Resources */,
+				843B9943215B4B820009C8B3 /* Muli-ExtraLight.ttf in Resources */,
+				843B9942215B4B820009C8B3 /* Muli Light Italic.ttf in Resources */,
+				843B9945215B4B820009C8B3 /* Muli-Semi-BoldItalic.ttf in Resources */,
+				843B9946215B4B820009C8B3 /* Muli Italic.ttf in Resources */,
 				84BFFDB820B89A3A00D70E9F /* LaunchScreen.storyboard in Resources */,
+				843B9948215B4B820009C8B3 /* Muli-BoldItalic.ttf in Resources */,
 				84BFFDB520B89A3A00D70E9F /* Assets.xcassets in Resources */,
+				843B9949215B4B820009C8B3 /* Muli Light.ttf in Resources */,
+				843B9941215B4B820009C8B3 /* Muli-ExtraLightItalic.ttf in Resources */,
+				843B9947215B4B820009C8B3 /* Muli-Bold.ttf in Resources */,
 				848A25E3213A7F8B003CBF8E /* Main.storyboard in Resources */,
+				843B9940215B4B820009C8B3 /* Muli.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

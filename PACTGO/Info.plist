@@ -20,6 +20,19 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Muli.ttf</string>
+		<string>Muli-Semi-BoldItalic.ttf</string>
+		<string>Muli-SemiBold.ttf</string>
+		<string>Muli-ExtraLightItalic.ttf</string>
+		<string>Muli-ExtraLight.ttf</string>
+		<string>Muli-BoldItalic.ttf</string>
+		<string>Muli-Bold.ttf</string>
+		<string>Muli Light.ttf</string>
+		<string>Muli Light Italic.ttf</string>
+		<string>Muli Italic.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
