@@ -23,16 +23,18 @@ class FoundTherapistViewController: UIViewController {
     }
     
     func initUI(){
-        title = "We Found you\n a Therapist!"
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
         titleLabel.numberOfLines = 2
-        titleLabel.text = title
+        titleLabel.text = "We Found you \n a Therapist!"
         titleLabel.textColor = .white
+        titleLabel.textAlignment = .center
+        titleLabel.font = UIFont(name: "Muli-SemiBold", size: 14)
         navigationItem.titleView = titleLabel
-        let rightBtn = UIBarButtonItem(title: "SUPPORT",
+        
+        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
                                        style: .plain,
                                        target: self,
-                                       action: #selector(btnSupportTapped))
+                                       action: #selector(btnMenuTapped))
         let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
                                       style: .plain,
                                       target: self,
@@ -44,12 +46,14 @@ class FoundTherapistViewController: UIViewController {
                                                                     green: 192 / 255,
                                                                     blue: 174 / 255,
                                                                     alpha: 1.0)
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
+                                                                   NSAttributedStringKey.foregroundColor: UIColor.white]
+        
     }
     
     // MARK: - Navigation button actions
-    @objc func btnSupportTapped(){
-        
+    @objc func btnMenuTapped(){
+        sideMenuController?.revealMenu()
     }
     
     @objc func btnBackTapped(){

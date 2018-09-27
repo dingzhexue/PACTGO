@@ -46,7 +46,8 @@ class ConfirmationViewController: UIViewController {
                                                                     green: 192 / 255,
                                                                     blue: 174 / 255,
                                                                     alpha: 1.0)
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
+                                                                   NSAttributedStringKey.foregroundColor: UIColor.white]
     }
     
     // MARK: - Navigation button actions

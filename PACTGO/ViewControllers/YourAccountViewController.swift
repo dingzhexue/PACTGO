@@ -32,7 +32,9 @@ class YourAccountViewController: UIViewController {
         
         title = "Your Account"
         navigationItem.titleView?.tintColor = UIColor.white
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
+                                                                   NSAttributedStringKey.foregroundColor: UIColor.white]
+        
     }
     
     /*

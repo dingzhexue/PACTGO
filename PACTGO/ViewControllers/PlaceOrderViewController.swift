@@ -1,28 +1,18 @@
 //
-//  HurtViewController.swift
+//  PlaceOrderViewController.swift
 //  PACTGO
 //
-//  Created by admin on 8/30/18.
+//  Created by admin on 9/27/18.
 //  Copyright © 2018 PACTGO. All rights reserved.
 //
 
 import UIKit
 
-class HurtViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+class PlaceOrderViewController: UIViewController {
 
-    @IBOutlet weak var txtDetail: UITextView!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var btnBackPain: UIButton!
-    @IBOutlet weak var btnNeckPain: UIButton!
-    @IBOutlet weak var btnAnklePain: UIButton!
-    @IBOutlet weak var btnArmPain: UIButton!
-    @IBOutlet weak var btnHipPain: UIButton!
-    @IBOutlet weak var btnKneePain: UIButton!
-    @IBOutlet weak var btnShoulderPain: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         initUI()
         navigationController?.navigationBar.isHidden = false
@@ -32,18 +22,18 @@ class HurtViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
         super.viewDidAppear(animated)
         navigationController?.navigationBar.isHidden = false
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func initUI(){
-        title = "Select What Hurts?"
-        let rightBtn = UIBarButtonItem(title: "Continue",
+        title = "Place Order"
+        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
                                        style: .plain,
                                        target: self,
-                                       action: #selector(btnContinueTapped))
+                                       action: #selector(btnMenuTapped))
         let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
                                       style: .plain,
                                       target: self,
@@ -57,12 +47,11 @@ class HurtViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
                                                                     alpha: 1.0)
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
                                                                    NSAttributedStringKey.foregroundColor: UIColor.white]
-        
     }
     
     // MARK: - Navigation button actions
-    @objc func btnContinueTapped(){
-        performSegue(withIdentifier: "GoToFindYourTherapistPage", sender: self)
+    @objc func btnMenuTapped(){
+        sideMenuController?.revealMenu()
     }
     
     @objc func btnBackTapped(){

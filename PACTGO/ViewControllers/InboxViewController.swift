@@ -41,7 +41,9 @@ class InboxViewController: UIViewController {
                                        action: #selector(btnMenuTapped))
         navigationItem.rightBarButtonItem = rightBtn
         navigationItem.leftBarButtonItem = leftBtn
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
+                                                                   NSAttributedStringKey.foregroundColor: UIColor.white]
+        
     }
     
     // MARK: - Navigation button actions

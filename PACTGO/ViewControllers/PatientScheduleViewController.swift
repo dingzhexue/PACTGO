@@ -86,6 +86,7 @@ class PatientScheduleViewController: UIViewController, UICollectionViewDelegate,
         titleLabel.text = title
         titleLabel.textColor = .white
         titleLabel.textAlignment = .center
+        titleLabel.font = UIFont(name: "Muli-SemiBold", size: 14)
         navigationItem.titleView = titleLabel
         
         let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
@@ -94,7 +95,9 @@ class PatientScheduleViewController: UIViewController, UICollectionViewDelegate,
                                        action: #selector(btnMenuTapped))
         navigationItem.titleView?.tintColor = UIColor.white
         navigationItem.rightBarButtonItem = rightBtn
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
+                                                                   NSAttributedStringKey.foregroundColor: UIColor.white]
+        
     }
     
     // MARK: - Navigation button actions

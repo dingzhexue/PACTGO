@@ -26,10 +26,10 @@ class PatientViewController: UIViewController {
     
     func initUI(){
         title = ""
-        let rightBtn = UIBarButtonItem(title: "Continue",
+        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
                                        style: .plain,
                                        target: self,
-                                       action: #selector(btnContinueTapped))
+                                       action: #selector(btnMenuTapped))
         let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
                                       style: .plain,
                                       target: self,
@@ -41,12 +41,14 @@ class PatientViewController: UIViewController {
                                                                     green: 192 / 255,
                                                                     blue: 174 / 255,
                                                                     alpha: 1.0)
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
+                                                                   NSAttributedStringKey.foregroundColor: UIColor.white]
+        
     }
     
     // MARK: - Navigation button actions
-    @objc func btnContinueTapped(){
-        performSegue(withIdentifier: "GoToFoundATherapistPage", sender: self)
+    @objc func btnMenuTapped(){
+        sideMenuController?.revealMenu()
     }
     
     @objc func btnBackTapped(){

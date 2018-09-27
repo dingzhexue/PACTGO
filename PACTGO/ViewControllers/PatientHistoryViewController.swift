@@ -39,6 +39,7 @@ class PatientHistoryViewController: UIViewController, UITableViewDelegate, UITab
         titleLabel.text = title
         titleLabel.textColor = .white
         titleLabel.textAlignment = .center
+        titleLabel.font = UIFont(name: "Muli-SemiBold", size: 14)
         navigationItem.titleView = titleLabel
         
 //        let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
@@ -47,7 +48,9 @@ class PatientHistoryViewController: UIViewController, UITableViewDelegate, UITab
 //                                      action: #selector(btnBackTapped))
         navigationItem.titleView?.tintColor = UIColor.white
 //        navigationItem.leftBarButtonItem = leftBtn
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
+                                                                   NSAttributedStringKey.foregroundColor: UIColor.white]
+        
     }
     
     // MARK: - Navigation button actions
