@@ -33,6 +33,7 @@ class SideMenuViewController: UITableViewController {
             cell = UITableViewCell()
         }
         cell?.textLabel?.text = viewTitles[indexPath.row]
+        cell?.textLabel?.font = UIFont(name: "Muli", size: 17)
         return cell!
     }
     

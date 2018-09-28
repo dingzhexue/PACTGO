@@ -16,11 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var tabController: AZTabBarController?
+    var storyBoard = UIStoryboard(name: "Main", bundle: nil)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         IQKeyboardManager.shared.enable = true
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToInitPage"),
+                                               object: nil,
+                                               queue: OperationQueue.main) { (notification) in
+                                                self.window?.rootViewController = self.storyBoard.instantiateViewController(withIdentifier: "WelcomeNavigationViewController")
+        }
+     
         return true
     }
 
