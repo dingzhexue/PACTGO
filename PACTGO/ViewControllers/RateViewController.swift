@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Cosmos
 
 class RateViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var rateView: CosmosView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,9 @@ class RateViewController: UIViewController {
         navigationItem.leftBarButtonItem = leftBtn
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
                                                                    NSAttributedStringKey.foregroundColor: UIColor.white]
-        
+        rateView.rating = 3.5
+        rateView.settings.starSize = Double(rateView.frame.size.height)
+        rateView.settings.starMargin = (Double(rateView.frame.size.width) - rateView.settings.starSize * 5) / 4
     }
     
     // MARK: - Navigation button actions

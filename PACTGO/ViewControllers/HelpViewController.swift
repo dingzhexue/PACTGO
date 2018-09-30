@@ -14,6 +14,7 @@ class HelpViewController: UIViewController {
     var selectedContent = ""
 
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var btnReview: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,8 +87,13 @@ class HelpViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let vc = segue.destination as! HelpDetailViewController
-        vc.titleText = selectedFAQ
-        vc.contentText = selectedContent
+        let btn = sender as! UIButton
+        if btn == btnReview {
+            
+        } else {
+            let vc = segue.destination as! HelpDetailViewController
+            vc.titleText = selectedFAQ
+            vc.contentText = selectedContent
+        }
     }
 }
