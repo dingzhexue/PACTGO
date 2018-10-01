@@ -119,32 +119,40 @@ class PatientScheduleViewController: UIViewController, UICollectionViewDelegate,
             collectionContainer.isHidden = false
         }
     }
-    
-    // MARK: PatientScheduleTableView Datasource and Delegate
+}
+
+// MARK: PatientScheduleTableView Datasource and Delegate
+extension PatientScheduleViewController{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 7
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView,
+                   heightForHeaderInSection section: Int) -> CGFloat {
         return 32
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView,
+                   heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 24
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView,
+                   viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableCell(withIdentifier: "patient_schedule_header_cell") as! PatientScheduleHeaderTableViewCell
         header.weekdayLabel.text = weekDays[section]
         return header
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "patient_schedule_cell", for: indexPath) as! PatientScheduleTableViewCell
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "patient_schedule_cell",
+                                                 for: indexPath) as! PatientScheduleTableViewCell
         if indexPath.row % 3 != 0 {
             cell.checkBtn.image = #imageLiteral(resourceName: "checkline-logo")
         } else {
@@ -154,21 +162,27 @@ class PatientScheduleViewController: UIViewController, UICollectionViewDelegate,
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView,
+                   didSelectRowAt indexPath: IndexPath) {
         
     }
-    
-    // MARK: PatientScheduleCollectionView Datasource and Delegate
+}
+
+// MARK: PatientScheduleCollectionView Datasource and Delegate
+extension PatientScheduleViewController{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
         return 42
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "schedule_select_date_cell", for: indexPath) as! PatientScheduleCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "schedule_select_date_cell",
+                                                      for: indexPath) as! PatientScheduleCollectionViewCell
         if indexPath.row < startWeekDay || indexPath.row > startWeekDay + numberOfDays - 1 {
             cell.backView.isHidden = true
             cell.backgroundColor = UIColor.clear
@@ -181,9 +195,15 @@ class PatientScheduleViewController: UIViewController, UICollectionViewDelegate,
                 cell.backView.backgroundColor = UIColor.lightGray
             } else {
                 if indexPath.row % 4 != 0 {
-                    cell.backView.backgroundColor = UIColor.init(red: 23.0/255.0, green: 208.0/255.0, blue: 206.0/255.0, alpha: 1.0)
+                    cell.backView.backgroundColor = UIColor.init(red: 23.0/255.0,
+                                                                 green: 208.0/255.0,
+                                                                 blue: 206.0/255.0,
+                                                                 alpha: 1.0)
                 } else {
-                    cell.backView.backgroundColor = UIColor.init(red: 198.0/255.0, green: 118.0/255.0, blue: 98.0/255.0, alpha: 1.0)
+                    cell.backView.backgroundColor = UIColor.init(red: 198.0/255.0,
+                                                                 green: 118.0/255.0,
+                                                                 blue: 98.0/255.0,
+                                                                 alpha: 1.0)
                     cell.bookContentLabel.text = "9-11 am Shoulder Therapy Appointment"
                 }
             }
@@ -191,22 +211,27 @@ class PatientScheduleViewController: UIViewController, UICollectionViewDelegate,
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        if indexPath.row < startWeekDay || indexPath.row > startWeekDay + numberOfDays - 1 {
-//            print("cannot select")
-//        } else {
-//            if indexPath.row % 7 == 0 || indexPath.row % 7 == 6 {
-//                print("already booked")
-//            } else {
-//                if indexPath.row % 4 != 0 {
-//                    self.performSegue(withIdentifier: "SelectTimeViewSegue", sender: self)
-//                }
-//            }
-//        }
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+        //        if indexPath.row < startWeekDay || indexPath.row > startWeekDay + numberOfDays - 1 {
+        //            print("cannot select")
+        //        } else {
+        //            if indexPath.row % 7 == 0 || indexPath.row % 7 == 6 {
+        //                print("already booked")
+        //            } else {
+        //                if indexPath.row % 4 != 0 {
+        //                    self.performSegue(withIdentifier: "SelectTimeViewSegue", sender: self)
+        //                }
+        //            }
+        //        }
+        performSegue(withIdentifier: "GoToScheduleDetailViewController",
+                     sender: self)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (collectionView.frame.size.width - 6 * 4) / 7, height: (collectionView.frame.size.height - 8 * 5) / 6)
+    func collectionView(_ collectionView: UICollectionView, layout
+        collectionViewLayout: UICollectionViewLayout, sizeForItemAt
+        indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (collectionView.frame.size.width - 6 * 4) / 7,
+                      height: (collectionView.frame.size.height - 8 * 5) / 6)
     }
-    
 }

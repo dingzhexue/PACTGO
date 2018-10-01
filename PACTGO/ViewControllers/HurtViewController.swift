@@ -20,6 +20,14 @@ class HurtViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     @IBOutlet weak var btnKneePain: UIButton!
     @IBOutlet weak var btnShoulderPain: UIButton!
     
+    var isBackPainSelected = false
+    var isNeckPainSelected = false
+    var isAnklePainSelected = false
+    var isArmPainSelected = false
+    var isHipPainSelected = false
+    var isKneePainSelected = false
+    var isShoulderPainSelected = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,7 +65,41 @@ class HurtViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
                                                                     alpha: 1.0)
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
                                                                    NSAttributedStringKey.foregroundColor: UIColor.white]
-        
+        if isBackPainSelected {
+            btnBackPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnBackPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+        if isNeckPainSelected {
+            btnNeckPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnNeckPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+        if isAnklePainSelected {
+            btnAnklePain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnAnklePain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+        if isArmPainSelected {
+            btnArmPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnArmPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+        if isHipPainSelected {
+            btnHipPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnHipPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+        if isKneePainSelected {
+            btnKneePain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnKneePain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+        if isShoulderPainSelected {
+            btnShoulderPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnShoulderPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
     }
     
     // MARK: - Navigation button actions
@@ -69,7 +111,69 @@ class HurtViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
         navigationController?.popViewController(animated: true)
     }
     
-
+    @IBAction func btnBackPainTapped(_ sender: Any) {
+        isBackPainSelected = !isBackPainSelected
+        if isBackPainSelected {
+            btnBackPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnBackPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+    }
+    
+    @IBAction func btnNeckPainTapped(_ sender: Any) {
+        isNeckPainSelected = !isNeckPainSelected
+        if isNeckPainSelected {
+            btnNeckPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnNeckPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+    }
+    
+    @IBAction func btnAnklePainTapped(_ sender: Any) {
+        isAnklePainSelected = !isAnklePainSelected
+        if isAnklePainSelected {
+            btnAnklePain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnAnklePain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+    }
+    
+    @IBAction func btnArmPainTapped(_ sender: Any) {
+        isArmPainSelected = !isArmPainSelected
+        if isArmPainSelected {
+            btnArmPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnArmPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+    }
+    
+    @IBAction func btnHipPainTapped(_ sender: Any) {
+        isHipPainSelected = !isHipPainSelected
+        if isHipPainSelected {
+            btnHipPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnHipPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+    }
+    
+    @IBAction func btnKneePainTapped(_ sender: Any) {
+        isKneePainSelected = !isKneePainSelected
+        if isKneePainSelected {
+            btnKneePain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnKneePain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+    }
+    
+    @IBAction func btnShulderPainTapped(_ sender: Any) {
+        isShoulderPainSelected = !isShoulderPainSelected
+        if isShoulderPainSelected {
+            btnShoulderPain.setImage(#imageLiteral(resourceName: "circle-checkmark"), for: .normal)
+        } else {
+            btnShoulderPain.setImage(#imageLiteral(resourceName: "selection-round"), for: .normal)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

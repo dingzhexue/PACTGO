@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                queue: OperationQueue.main) { (notification) in
                                                 self.window?.rootViewController = self.storyBoard.instantiateViewController(withIdentifier: "WelcomeNavigationViewController")
         }
+        UIApplication.shared.statusBarStyle = .lightContent
      
         return true
     }

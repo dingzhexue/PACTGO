@@ -87,13 +87,5 @@ class HelpViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let btn = sender as! UIButton
-        if btn == btnReview {
-            
-        } else {
-            let vc = segue.destination as! HelpDetailViewController
-            vc.titleText = selectedFAQ
-            vc.contentText = selectedContent
-        }
     }
 }
