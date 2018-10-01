@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import ActiveLabel
 
 class FindYourTherapistViewController: UIViewController {
 
+    @IBOutlet weak var lblProfile: ActiveLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,6 +52,18 @@ class FindYourTherapistViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
                                                                    NSAttributedStringKey.foregroundColor: UIColor.white]
         
+        let customType = ActiveType.custom(pattern: "Read More")
+        lblProfile.enabledTypes = [customType]
+        lblProfile.text = "Clinton Courtney, MCEP is the founder of PACTGO, PACT NYC and Major League Rugby, MLR respectively. Clinton serviced the New York sports and orthopedic world, contributing to the injury prevention... Read More"
+        lblProfile.handleCustomTap(for: customType) { (string) in
+            self.performSegue(withIdentifier: "GoToTherapistViewController", sender: self)
+        }
+        lblProfile.customColor[customType] = UIColor(red: 0,
+                                                     green: 204 / 256,
+                                                     blue: 201 / 256,
+                                                     alpha: 1.0)
+        lblProfile.numberOfLines = 0
+        lblProfile.lineSpacing = 5
     }
     
     // MARK: - Navigation button actions

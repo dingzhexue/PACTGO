@@ -21,4 +21,5 @@ target 'PACTGO' do
     pod 'AZTabBar'
     pod 'IQKeyboardManagerSwift'
     pod 'Cosmos'
+    pod 'ActiveLabel'
 end
