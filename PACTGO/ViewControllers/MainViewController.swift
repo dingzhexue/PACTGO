@@ -125,7 +125,10 @@ class MainViewController: UIViewController, AZTabBarDelegate {
                                                    green: 192 / 255,
                                                    blue: 174 / 255,
                                                    alpha: 1.0)
-        appDelegate.tabController?.buttonsBackgroundColor = .white
+        appDelegate.tabController?.buttonsBackgroundColor = UIColor.init(red: 215 / 255,
+                                                                         green: 215 / 255,
+                                                                         blue: 215 / 255,
+                                                                         alpha: 1.0)
         appDelegate.tabController?.selectionIndicatorHeight = 0
         appDelegate.tabController?.animateTabChange = false
         appDelegate.tabController?.tabBarHeight = 70
@@ -165,7 +168,10 @@ extension MainViewController{
     func tabBar(_ tabBar: AZTabBarController, didSelectTabAtIndex index: Int) {
         switch index {
         case 0:
-            appDelegate.tabController?.buttonsBackgroundColor = .white
+            appDelegate.tabController?.buttonsBackgroundColor = UIColor.init(red: 215 / 255,
+                                                                             green: 215 / 255,
+                                                                             blue: 215 / 255,
+                                                                             alpha: 1.0)
             break
         case 1:
             appDelegate.tabController?.buttonsBackgroundColor = UIColor.init(red: 54 / 255,
@@ -174,7 +180,10 @@ extension MainViewController{
                                                                              alpha: 1.0)
             break
         case 2:
-            appDelegate.tabController?.buttonsBackgroundColor = .white
+            appDelegate.tabController?.buttonsBackgroundColor = UIColor.init(red: 215 / 255,
+                                                                             green: 215 / 255,
+                                                                             blue: 215 / 255,
+                                                                             alpha: 1.0)
         default:
             break
         }

@@ -9,20 +9,64 @@
 import UIKit
 
 class MessageListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 24
-    }
-    
     
     @IBOutlet weak var messageListTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         messageListTableView.delegate = self
         messageListTableView.dataSource = self
-      
+        // Do any additional setup after loading the view.
+        navigationController?.navigationBar.isHidden = false
+        
+        initUI()
     }
-    //MARK: MessageListTableView DataSource and Delegate
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func initUI(){
+        title = "Messages"
+        let leftBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "back-arrow").withRenderingMode(.alwaysOriginal),
+                                      style: .plain,
+                                      target: self,
+                                      action: #selector(btnBackTapped))
+        let rightBtn = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal),
+                                       style: .plain,
+                                       target: self,
+                                       action: #selector(btnMenuTapped))
+        navigationItem.rightBarButtonItem = rightBtn
+        navigationItem.leftBarButtonItem = leftBtn
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Muli-SemiBold", size: 17)!,
+                                                                   NSAttributedStringKey.foregroundColor: UIColor.white]
+        
+    }
+    
+    // MARK: - Navigation button actions
+    @objc func btnMenuTapped(){
+        sideMenuController?.revealMenu()
+    }
+    
+    @objc func btnBackTapped(){
+        navigationController?.popViewController(animated: true)
+    }
+}
+
+//MARK: MessageListTableView DataSource and Delegate
+extension MessageListViewController{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 24
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

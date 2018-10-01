@@ -63,7 +63,7 @@ class FindYourTherapistViewController: UIViewController {
                                                      blue: 201 / 256,
                                                      alpha: 1.0)
         lblProfile.numberOfLines = 0
-        lblProfile.lineSpacing = 5
+        lblProfile.lineSpacing = 4
     }
     
     // MARK: - Navigation button actions
