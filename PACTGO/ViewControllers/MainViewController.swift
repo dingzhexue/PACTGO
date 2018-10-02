@@ -35,8 +35,14 @@ class MainViewController: UIViewController, AZTabBarDelegate {
         initUI()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.navigationBar.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,28 +54,27 @@ class MainViewController: UIViewController, AZTabBarDelegate {
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToAppointmentPage"),
                                                object: nil,
                                                queue: OperationQueue.main) { (notification) in
-                                                self.navigationController?.popViewController(animated: false)
-                                                self.performSegue(withIdentifier: "GoToAppointmentPage", sender: self)
+                                                self.navigationController?.popToRootViewController(animated: true)
                                                 self.sideMenuController?.hideMenu()
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToYourAccountPage"),
                                                object: nil,
                                                queue: OperationQueue.main) { (notification) in
-                                                self.navigationController?.popViewController(animated: false)
+                                                self.navigationController?.popToRootViewController(animated: false)
                                                 self.initTabBarController()
                                                 self.sideMenuController?.hideMenu()
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToHelpPage"),
                                                object: nil,
                                                queue: OperationQueue.main) { (notification) in
-                                                self.navigationController?.popViewController(animated: false)
+                                                self.navigationController?.popToRootViewController(animated: false)
                                                 self.performSegue(withIdentifier: "GoToHelpPage", sender: self)
                                                 self.sideMenuController?.hideMenu()
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "GoToInboxPage"),
                                                object: nil,
                                                queue: OperationQueue.main) { (notification) in
-                                                self.navigationController?.popViewController(animated: false)
+                                                self.navigationController?.popToRootViewController(animated: false)
                                                 self.performSegue(withIdentifier: "GoToInboxPage", sender: self)
                                                 self.sideMenuController?.hideMenu()
         }
